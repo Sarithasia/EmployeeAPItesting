@@ -14,6 +14,7 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -39,14 +40,24 @@ public class CreateEmployeeAPITests extends BaseTest
 	int EMPLOYEE_COUNT_IN_EXCEL;
 	EmployeeAPI EmployeeAPI;
 	
-	private static ExcelReader excel;
+	private static  ExcelReader excel;
 	SoftAssert softassert;
 	HashSet<Integer> id = new HashSet<>();
+	DataUtil DataUtil;
 
 	public CreateEmployeeAPITests() throws IOException 
 	{
 		super();
+		DataUtil =new DataUtil();
 
+		setFilePath(prop.getProperty("filePathToExcelForCreation"));
+		setSheetName(prop.getProperty("CreateUserSheetName"));
+		excel = new ExcelReader(getFilePath());
+	}
+	
+	@BeforeMethod()
+	public void Initialization() throws IOException 
+	{
 		setFilePath(prop.getProperty("filePathToExcelForCreation"));
 		setSheetName(prop.getProperty("CreateUserSheetName"));
 		excel = new ExcelReader(getFilePath());
@@ -56,12 +67,12 @@ public class CreateEmployeeAPITests extends BaseTest
 	}
 
 	@DataProvider(name = "data")
-	public static Object[][] Data(Method m) 
+	public  Object[][] Data(Method m) throws IOException 
 	{
-		return DataUtil.getData(m, BaseTest.getSheetName(), excel);
+		return DataUtil.getData(m, getSheetName(), excel);
 	}
 
-	@Test(priority = 1, dataProvider = "data")
+	@Test(priority = 1, dataProvider= "data")
 	public void ValidateCustomerApiWithValidData(HashMap<String, String> employeeData) {
 
 		log.info("Starting test with data: {}", employeeData);
@@ -107,7 +118,7 @@ public class CreateEmployeeAPITests extends BaseTest
 
 	}
 
-	@Test(priority = 3, dataProvider = "data", threadPoolSize = 2)
+	@Test(priority = 3, dataProvider = "data")
 	public void ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee(
 			HashMap<String, String> employeeData) {
 

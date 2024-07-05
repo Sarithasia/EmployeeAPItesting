@@ -18,13 +18,13 @@ import static org.hamcrest.Matchers.*;
 
 public class BaseTest {
 	FileInputStream fis;
-	public static ExcelReader excel;
 	protected static Properties prop;
 
-	private static ThreadLocal<String> filePath = new ThreadLocal<>();
-	private static ThreadLocal<String> sheetName = new ThreadLocal<>();
+	private  ThreadLocal<String> filePath = new ThreadLocal<>();
+	private  ThreadLocal<String> sheetName = new ThreadLocal<>();
 
 	public BaseTest() throws IOException {
+		
 		try {
 
 			fis = new FileInputStream("src/test/resources/Property/Configuration.properties");
@@ -40,19 +40,19 @@ public class BaseTest {
 		}
 	}
 
-	public static void setFilePath(String path) {
+	public  void setFilePath(String path) {
 		filePath.set(path);
 	}
 
-	public static String getFilePath() {
+	public  String getFilePath() {
 		return filePath.get();
 	}
 
-	public static void setSheetName(String name) {
+	public  void setSheetName(String name) {
 		sheetName.set(name);
 	}
 
-	public static String getSheetName() {
+	public  String getSheetName() {
 		return sheetName.get();
 	}
 

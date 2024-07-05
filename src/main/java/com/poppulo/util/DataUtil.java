@@ -17,15 +17,8 @@ public class DataUtil extends BaseTest
 		super();
 	}
 
-	@DataProvider(name = "data")
-	public static Object[][] Data(Method m) {
-		String filePath = BaseTest.getFilePath();
-		String sheetName = BaseTest.getSheetName();
-		ExcelReader excel = new ExcelReader(filePath);
-		return getData(m, sheetName, excel);
-	}
 
-	public static Object[][] getData(Method m, String sheetName, ExcelReader excel) {
+	public  Object[][] getData(Method m, String sheetName, ExcelReader excel) throws IOException {
 
 		int rows = excel.getRowCount(sheetName);
 		// System.out.println("Total rows are : " + rows);

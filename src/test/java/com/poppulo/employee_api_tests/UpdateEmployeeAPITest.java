@@ -15,15 +15,22 @@ import com.poppulo.util.ExcelReader;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import io.restassured.response.Response;
 
 public class UpdateEmployeeAPITest extends BaseTest {
 
 	EmployeeAPI EmployeeAPI;
+	public static  ExcelReader excel;
+	DataUtil  DataUtil;
+
+
 
 	public UpdateEmployeeAPITest() throws IOException {
-		super();
+		
+		super();	
+		DataUtil =new DataUtil();
 
 		setFilePath(prop.getProperty("filePathToExcelForUpdation"));
 		setSheetName(prop.getProperty("UpdateUserSheetName"));
@@ -33,8 +40,9 @@ public class UpdateEmployeeAPITest extends BaseTest {
 	}
 
 	@DataProvider(name = "updateData")
-	public static Object[][] Data(Method m) {
-		return DataUtil.getData(m, BaseTest.getSheetName(), excel);
+	public  Object[][] Data(Method m) throws IOException 
+	{
+		return DataUtil.getData(m, getSheetName(), excel);
 	}
 
 	@Test(priority = 1, dataProvider = "updateData")

@@ -24,25 +24,27 @@ import io.restassured.response.Response;
 public class GetEmployeeAPITest extends BaseTest {
 	private static ExcelReader excel;
 	EmployeeAPI EmployeeAPI;
+	DataUtil DataUtil;
 
 	public GetEmployeeAPITest() throws IOException {
 		super();
 		EmployeeAPI = new EmployeeAPI();
+		DataUtil =new DataUtil();
+
 		setFilePath(prop.getProperty("filePathToExcelForGet"));
-		setSheetName(prop.getProperty("UpdateUserSheetName"));
+		setSheetName(prop.getProperty("GetUserSheetName"));
 		excel = new ExcelReader(getFilePath());
-		
 
 	}
 
 	
 	@DataProvider(name = "getdata")
-	public static Object[][] Data(Method m) 
+	public  Object[][] Data(Method m) throws IOException 
 	{
 		return DataUtil.getData(m, getSheetName(), excel);
 	}
 	
-	@Test(priority = 1,  dataProvider = "getdata")
+	@Test(priority = 1, dataProvider = "getdata")
 
 	public void testGetUserDataSuccess(HashMap<String, String> data) {
 
