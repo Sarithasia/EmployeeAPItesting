@@ -22,7 +22,7 @@ import com.poppulo.util.ExcelReader;
 import io.restassured.response.Response;
 
 public class GetEmployeeAPITest extends BaseTest {
-	private static ExcelReader excel;
+	private  ExcelReader excel;
 	EmployeeAPI EmployeeAPI;
 	DataUtil DataUtil;
 

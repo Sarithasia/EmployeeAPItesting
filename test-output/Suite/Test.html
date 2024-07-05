@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/4/8</td>
+<td>Tests passed/Failed/Skipped:</td><td>13/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jul 05 11:40:11 IST 2024</td>
+<td>Started on:</td><td>Fri Jul 05 12:25:08 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5878 ms)</td>
+<tr><td>Total time:</td><td>13 seconds (13070 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,56 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.poppulo.employee_api_tests.DeleteEmployeeTest.testDeleteNonExistentEmployee()'><b>testDeleteNonExistentEmployee</b><br>Test class: com.poppulo.employee_api_tests.DeleteEmployeeTest</td>
+<td><div><pre>java.lang.AssertionError: Expected status code 404 (Not Found),Able to delete NonExistent employee expected [404] but found [204]
+	at com.poppulo.employee_api_tests.DeleteEmployeeTest.testDeleteNonExistentEmployee(DeleteEmployeeTest.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2016530858", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2016530858'><pre>java.lang.AssertionError: Expected status code 404 (Not Found),Able to delete NonExistent employee expected [404] but found [204]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at com.poppulo.employee_api_tests.DeleteEmployeeTest.testDeleteNonExistentEmployee(DeleteEmployeeTest.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@2ca6546f</td></tr>
+<tr>
 <td title='com.poppulo.employee_api_tests.DeleteEmployeeTest.testDeleteEmployeeWithMalformedRequest()'><b>testDeleteEmployeeWithMalformedRequest</b><br>Test class: com.poppulo.employee_api_tests.DeleteEmployeeTest</td>
 <td><div><pre>java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with malformed delete request expected [400] but found [204]
 	at com.poppulo.employee_api_tests.DeleteEmployeeTest.testDeleteEmployeeWithMalformedRequest(DeleteEmployeeTest.java:74)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1496091820", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1496091820'><pre>java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with malformed delete request expected [400] but found [204]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace542766981", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace542766981'><pre>java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with malformed delete request expected [400] but found [204]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
@@ -101,21 +143,32 @@ function toggleAllBoxes() {
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@997d532</td></tr>
+<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@2ca6546f</td></tr>
 <tr>
 <td title='com.poppulo.employee_api_tests.DeleteEmployeeTest.testDeleteEmployeeWithEmptyId()'><b>testDeleteEmployeeWithEmptyId</b><br>Test class: com.poppulo.employee_api_tests.DeleteEmployeeTest</td>
 <td><div><pre>java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with empty id expected [400] but found [204]
 	at com.poppulo.employee_api_tests.DeleteEmployeeTest.testDeleteEmployeeWithEmptyId(DeleteEmployeeTest.java:60)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1485854754", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1485854754'><pre>java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with empty id expected [400] but found [204]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace553276023", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace553276023'><pre>java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with empty id expected [400] but found [204]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
@@ -134,21 +187,32 @@ function toggleAllBoxes() {
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@997d532</td></tr>
+<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@2ca6546f</td></tr>
 <tr>
 <td title='com.poppulo.employee_api_tests.DeleteEmployeeTest.testDeleteEmployeeWithInvalidIdFormat()'><b>testDeleteEmployeeWithInvalidIdFormat</b><br>Test class: com.poppulo.employee_api_tests.DeleteEmployeeTest</td>
 <td><div><pre>java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with InvalidIdFormat expected [400] but found [204]
 	at com.poppulo.employee_api_tests.DeleteEmployeeTest.testDeleteEmployeeWithInvalidIdFormat(DeleteEmployeeTest.java:51)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1059849158", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1059849158'><pre>java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with InvalidIdFormat expected [400] but found [204]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1618043679", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1618043679'><pre>java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with InvalidIdFormat expected [400] but found [204]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
@@ -167,45 +231,25 @@ function toggleAllBoxes() {
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@997d532</td></tr>
-<tr>
-<td title='com.poppulo.employee_api_tests.DeleteEmployeeTest.testDeleteNonExistentEmployee()'><b>testDeleteNonExistentEmployee</b><br>Test class: com.poppulo.employee_api_tests.DeleteEmployeeTest</td>
-<td><div><pre>java.lang.AssertionError: Expected status code 404 (Not Found),Able to delete NonExistent employee expected [404] but found [204]
-	at com.poppulo.employee_api_tests.DeleteEmployeeTest.testDeleteNonExistentEmployee(DeleteEmployeeTest.java:42)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2034824388", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2034824388'><pre>java.lang.AssertionError: Expected status code 404 (Not Found),Able to delete NonExistent employee expected [404] but found [204]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:907)
-	at com.poppulo.employee_api_tests.DeleteEmployeeTest.testDeleteNonExistentEmployee(DeleteEmployeeTest.java:42)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-</pre></div></td>
-<td>0</td>
-<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@997d532</td></tr>
+<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@2ca6546f</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -215,346 +259,70 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.ValidateCustomerApiWithValidData()'><b>ValidateCustomerApiWithValidData</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests<br>Parameters: {name=kia  MALHOTRA J, job=dev}</td>
+<td></td>
+<td>0</td>
+<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@3bcd426c</td></tr>
+<tr>
+<td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.ValidateCustomerApiWithInValidData()'><b>ValidateCustomerApiWithInValidData</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests<br>Parameters: {name=Hiya, job=}</td>
+<td></td>
+<td>0</td>
+<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@3bcd426c</td></tr>
+<tr>
+<td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.ValidateCustomerApiWithInValidData()'><b>ValidateCustomerApiWithInValidData</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests<br>Parameters: {name=Rohit, job=%$%^&}</td>
+<td></td>
+<td>0</td>
+<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@3bcd426c</td></tr>
+<tr>
+<td title='com.poppulo.employee_api_tests.UpdateEmployeeAPITest.validateInvalidEmployeeDataUpdate()'><b>validateInvalidEmployeeDataUpdate</b><br>Test class: com.poppulo.employee_api_tests.UpdateEmployeeAPITest<br>Parameters: {name=$%^, job=*&^}</td>
+<td></td>
+<td>0</td>
+<td>com.poppulo.employee_api_tests.UpdateEmployeeAPITest@21719a0</td></tr>
+<tr>
+<td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.ValidateCustomerApiWithInValidData()'><b>ValidateCustomerApiWithInValidData</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests<br>Parameters: {name="$%%^, job=qa}</td>
+<td></td>
+<td>0</td>
+<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@3bcd426c</td></tr>
+<tr>
 <td title='com.poppulo.employee_api_tests.GetEmployeeAPITest.testGetNonExistentUser()'><b>testGetNonExistentUser</b><br>Test class: com.poppulo.employee_api_tests.GetEmployeeAPITest</td>
 <td></td>
 <td>0</td>
-<td>com.poppulo.employee_api_tests.GetEmployeeAPITest@a50ae65</td></tr>
+<td>com.poppulo.employee_api_tests.GetEmployeeAPITest@6ff37443</td></tr>
+<tr>
+<td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.ValidateCustomerApiWithValidData()'><b>ValidateCustomerApiWithValidData</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests<br>Parameters: {name=sia, job=qa}</td>
+<td></td>
+<td>3</td>
+<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@3bcd426c</td></tr>
+<tr>
+<td title='com.poppulo.employee_api_tests.GetEmployeeAPITest.testGetUserDataSuccess()'><b>testGetUserDataSuccess</b><br>Test class: com.poppulo.employee_api_tests.GetEmployeeAPITest<br>Parameters: {last_name=Weaver, id=2.0, avatar=https://reqres.in/img/faces/2-image.jpg, text=To keep ReqRes free, contributions towards server costs are appreciated!, first_name=Janet, email=janet.weaver@reqres.in, url=https://reqres.in/#support-heading}</td>
+<td></td>
+<td>0</td>
+<td>com.poppulo.employee_api_tests.GetEmployeeAPITest@6ff37443</td></tr>
 <tr>
 <td title='com.poppulo.employee_api_tests.DeleteEmployeeTest.testVerifyEmployeeDeletion()'><b>testVerifyEmployeeDeletion</b><br>Test class: com.poppulo.employee_api_tests.DeleteEmployeeTest</td>
 <td></td>
-<td>2</td>
-<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@997d532</td></tr>
+<td>0</td>
+<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@2ca6546f</td></tr>
+<tr>
+<td title='com.poppulo.employee_api_tests.UpdateEmployeeAPITest.validateValidEmployeeUpdate()'><b>validateValidEmployeeUpdate</b><br>Test class: com.poppulo.employee_api_tests.UpdateEmployeeAPITest<br>Parameters: {name=morpheus, job=zion resident}</td>
+<td></td>
+<td>0</td>
+<td>com.poppulo.employee_api_tests.UpdateEmployeeAPITest@21719a0</td></tr>
+<tr>
+<td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.verifyUniqueEmployeeIds()'><b>verifyUniqueEmployeeIds</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests</td>
+<td></td>
+<td>0</td>
+<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@3bcd426c</td></tr>
+<tr>
+<td title='com.poppulo.employee_api_tests.UpdateEmployeeAPITest.validateInvalidEmployeeIdUpdate()'><b>validateInvalidEmployeeIdUpdate</b><br>Test class: com.poppulo.employee_api_tests.UpdateEmployeeAPITest<br>Parameters: {name=Manju, job=Dev}</td>
+<td></td>
+<td>0</td>
+<td>com.poppulo.employee_api_tests.UpdateEmployeeAPITest@21719a0</td></tr>
 <tr>
 <td title='com.poppulo.employee_api_tests.DeleteEmployeeTest.testSimultaneousDeleteOperations()'><b>testSimultaneousDeleteOperations</b><br>Test class: com.poppulo.employee_api_tests.DeleteEmployeeTest</td>
 <td></td>
 <td>1</td>
-<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@997d532</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.verifyUniqueEmployeeIds()'><b>verifyUniqueEmployeeIds</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests</td>
-<td><div><pre>java.lang.Throwable: Method CreateEmployeeAPITests.verifyUniqueEmployeeIds()[pri:4, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@2d195ee4] depends on not successfully finished methods
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2078025852", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2078025852'><pre>java.lang.Throwable: Method CreateEmployeeAPITests.verifyUniqueEmployeeIds()[pri:4, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@2d195ee4] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-</pre></div></td>
-<td>0</td>
-<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@2d195ee4</td></tr>
-<tr>
-<td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.ValidateCustomerApiWithValidData()'><b>ValidateCustomerApiWithValidData</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests</td>
-<td><div><pre>java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheetIndex(XSSFWorkbook.java:1230)
-	at com.poppulo.util.ExcelReader.getRowCount(ExcelReader.java:52)
-	at com.poppulo.util.DataUtil.getData(DataUtil.java:23)
-	at com.poppulo.employee_api_tests.CreateEmployeeAPITests.Data(CreateEmployeeAPITests.java:72)
-	... 12 more
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace256926817", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace256926817'><pre>java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheetIndex(XSSFWorkbook.java:1230)
-	at com.poppulo.util.ExcelReader.getRowCount(ExcelReader.java:52)
-	at com.poppulo.util.DataUtil.getData(DataUtil.java:23)
-	at com.poppulo.employee_api_tests.CreateEmployeeAPITests.Data(CreateEmployeeAPITests.java:72)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
-	... 12 more
-</pre></div></td>
-<td>0</td>
-<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@2d195ee4</td></tr>
-<tr>
-<td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee()'><b>ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests</td>
-<td><div><pre>java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheetIndex(XSSFWorkbook.java:1230)
-	at com.poppulo.util.ExcelReader.getRowCount(ExcelReader.java:52)
-	at com.poppulo.util.DataUtil.getData(DataUtil.java:23)
-	at com.poppulo.employee_api_tests.CreateEmployeeAPITests.Data(CreateEmployeeAPITests.java:72)
-	... 12 more
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace878257400", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace878257400'><pre>java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheetIndex(XSSFWorkbook.java:1230)
-	at com.poppulo.util.ExcelReader.getRowCount(ExcelReader.java:52)
-	at com.poppulo.util.DataUtil.getData(DataUtil.java:23)
-	at com.poppulo.employee_api_tests.CreateEmployeeAPITests.Data(CreateEmployeeAPITests.java:72)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
-	... 12 more
-</pre></div></td>
-<td>0</td>
-<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@2d195ee4</td></tr>
-<tr>
-<td title='com.poppulo.employee_api_tests.GetEmployeeAPITest.testGetUserDataSuccess()'><b>testGetUserDataSuccess</b><br>Test class: com.poppulo.employee_api_tests.GetEmployeeAPITest</td>
-<td><div><pre>java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheetIndex(XSSFWorkbook.java:1230)
-	at com.poppulo.util.ExcelReader.getRowCount(ExcelReader.java:52)
-	at com.poppulo.util.DataUtil.getData(DataUtil.java:23)
-	at com.poppulo.employee_api_tests.GetEmployeeAPITest.Data(GetEmployeeAPITest.java:44)
-	... 12 more
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace664187780", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace664187780'><pre>java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheetIndex(XSSFWorkbook.java:1230)
-	at com.poppulo.util.ExcelReader.getRowCount(ExcelReader.java:52)
-	at com.poppulo.util.DataUtil.getData(DataUtil.java:23)
-	at com.poppulo.employee_api_tests.GetEmployeeAPITest.Data(GetEmployeeAPITest.java:44)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
-	... 12 more
-</pre></div></td>
-<td>0</td>
-<td>com.poppulo.employee_api_tests.GetEmployeeAPITest@a50ae65</td></tr>
-<tr>
-<td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.ValidateCustomerApiWithInValidData()'><b>ValidateCustomerApiWithInValidData</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests</td>
-<td><div><pre>java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheetIndex(XSSFWorkbook.java:1230)
-	at com.poppulo.util.ExcelReader.getRowCount(ExcelReader.java:52)
-	at com.poppulo.util.DataUtil.getData(DataUtil.java:23)
-	at com.poppulo.employee_api_tests.CreateEmployeeAPITests.Data(CreateEmployeeAPITests.java:72)
-	... 12 more
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1245842112", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1245842112'><pre>java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheetIndex(XSSFWorkbook.java:1230)
-	at com.poppulo.util.ExcelReader.getRowCount(ExcelReader.java:52)
-	at com.poppulo.util.DataUtil.getData(DataUtil.java:23)
-	at com.poppulo.employee_api_tests.CreateEmployeeAPITests.Data(CreateEmployeeAPITests.java:72)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
-	... 12 more
-</pre></div></td>
-<td>0</td>
-<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@2d195ee4</td></tr>
-<tr>
-<td title='com.poppulo.employee_api_tests.UpdateEmployeeAPITest.validateValidEmployeeUpdate()'><b>validateValidEmployeeUpdate</b><br>Test class: com.poppulo.employee_api_tests.UpdateEmployeeAPITest</td>
-<td><div><pre>java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheetIndex(XSSFWorkbook.java:1230)
-	at com.poppulo.util.ExcelReader.getRowCount(ExcelReader.java:52)
-	at com.poppulo.util.DataUtil.getData(DataUtil.java:23)
-	at com.poppulo.employee_api_tests.UpdateEmployeeAPITest.Data(UpdateEmployeeAPITest.java:45)
-	... 12 more
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace207648616", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace207648616'><pre>java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheetIndex(XSSFWorkbook.java:1230)
-	at com.poppulo.util.ExcelReader.getRowCount(ExcelReader.java:52)
-	at com.poppulo.util.DataUtil.getData(DataUtil.java:23)
-	at com.poppulo.employee_api_tests.UpdateEmployeeAPITest.Data(UpdateEmployeeAPITest.java:45)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
-	... 12 more
-</pre></div></td>
-<td>0</td>
-<td>com.poppulo.employee_api_tests.UpdateEmployeeAPITest@56de6d6b</td></tr>
-<tr>
-<td title='com.poppulo.employee_api_tests.UpdateEmployeeAPITest.validateInvalidEmployeeIdUpdate()'><b>validateInvalidEmployeeIdUpdate</b><br>Test class: com.poppulo.employee_api_tests.UpdateEmployeeAPITest</td>
-<td><div><pre>java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheetIndex(XSSFWorkbook.java:1230)
-	at com.poppulo.util.ExcelReader.getRowCount(ExcelReader.java:52)
-	at com.poppulo.util.DataUtil.getData(DataUtil.java:23)
-	at com.poppulo.employee_api_tests.UpdateEmployeeAPITest.Data(UpdateEmployeeAPITest.java:45)
-	... 12 more
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace472751985", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace472751985'><pre>java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheetIndex(XSSFWorkbook.java:1230)
-	at com.poppulo.util.ExcelReader.getRowCount(ExcelReader.java:52)
-	at com.poppulo.util.DataUtil.getData(DataUtil.java:23)
-	at com.poppulo.employee_api_tests.UpdateEmployeeAPITest.Data(UpdateEmployeeAPITest.java:45)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
-	... 12 more
-</pre></div></td>
-<td>0</td>
-<td>com.poppulo.employee_api_tests.UpdateEmployeeAPITest@56de6d6b</td></tr>
-<tr>
-<td title='com.poppulo.employee_api_tests.UpdateEmployeeAPITest.validateInvalidEmployeeDataUpdate()'><b>validateInvalidEmployeeDataUpdate</b><br>Test class: com.poppulo.employee_api_tests.UpdateEmployeeAPITest</td>
-<td><div><pre>java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheetIndex(XSSFWorkbook.java:1230)
-	at com.poppulo.util.ExcelReader.getRowCount(ExcelReader.java:52)
-	at com.poppulo.util.DataUtil.getData(DataUtil.java:23)
-	at com.poppulo.employee_api_tests.UpdateEmployeeAPITest.Data(UpdateEmployeeAPITest.java:45)
-	... 12 more
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace6458911", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace6458911'><pre>java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;name&quot; is null
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheetIndex(XSSFWorkbook.java:1230)
-	at com.poppulo.util.ExcelReader.getRowCount(ExcelReader.java:52)
-	at com.poppulo.util.DataUtil.getData(DataUtil.java:23)
-	at com.poppulo.employee_api_tests.UpdateEmployeeAPITest.Data(UpdateEmployeeAPITest.java:45)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
-	... 12 more
-</pre></div></td>
-<td>0</td>
-<td>com.poppulo.employee_api_tests.UpdateEmployeeAPITest@56de6d6b</td></tr>
+<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@2ca6546f</td></tr>
 </table><p>
 </body>
 </html>

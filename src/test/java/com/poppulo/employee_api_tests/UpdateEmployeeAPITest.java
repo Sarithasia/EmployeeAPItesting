@@ -22,7 +22,7 @@ import io.restassured.response.Response;
 public class UpdateEmployeeAPITest extends BaseTest {
 
 	EmployeeAPI EmployeeAPI;
-	public static  ExcelReader excel;
+	public   ExcelReader excel;
 	DataUtil  DataUtil;
 
 

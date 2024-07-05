@@ -40,7 +40,7 @@ public class CreateEmployeeAPITests extends BaseTest
 	int EMPLOYEE_COUNT_IN_EXCEL;
 	EmployeeAPI EmployeeAPI;
 	
-	private static  ExcelReader excel;
+	private   ExcelReader excel;
 	SoftAssert softassert;
 	HashSet<Integer> id = new HashSet<>();
 	DataUtil DataUtil;

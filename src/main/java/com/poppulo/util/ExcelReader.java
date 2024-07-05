@@ -11,22 +11,19 @@ import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.xssf.usermodel.*;
 
+
+
 public class ExcelReader {
 
     private String path;
-    private  ThreadLocal<FileInputStream> threadLocalFis = new ThreadLocal<>();
-    private  ThreadLocal<XSSFWorkbook> threadLocalWorkbook = new ThreadLocal<>();
-    private  ThreadLocal<XSSFSheet> threadLocalSheet = new ThreadLocal<>();
-    private  ThreadLocal<XSSFRow> threadLocalRow = new ThreadLocal<>();
-    private  ThreadLocal<XSSFCell> threadLocalCell = new ThreadLocal<>();
+    private ThreadLocal<FileInputStream> threadLocalFis = ThreadLocal.withInitial(() -> null);
+    private ThreadLocal<XSSFWorkbook> threadLocalWorkbook = ThreadLocal.withInitial(() -> null);
+    private ThreadLocal<XSSFSheet> threadLocalSheet = ThreadLocal.withInitial(() -> null);
+    private ThreadLocal<XSSFRow> threadLocalRow = ThreadLocal.withInitial(() -> null);
+    private ThreadLocal<XSSFCell> threadLocalCell = ThreadLocal.withInitial(() -> null);
 
     public ExcelReader(String path) {
         this.path = path;
-        threadLocalFis.set(null); // Initializing thread local variables
-        threadLocalWorkbook.set(null);
-        threadLocalSheet.set(null);
-        threadLocalRow.set(null);
-        threadLocalCell.set(null);
     }
 
     private void initializeWorkbook() throws IOException {
@@ -62,32 +59,32 @@ public class ExcelReader {
         if (index == -1)
             return "";
 
-        threadLocalSheet.set(getWorkbook().getSheetAt(index));
-        threadLocalRow.set(threadLocalSheet.get().getRow(0));
+        XSSFSheet sheet = getSheet(sheetName);
+        XSSFRow row = sheet.getRow(0);
 
-        for (int i = 0; i < threadLocalRow.get().getLastCellNum(); i++) {
-            if (threadLocalRow.get().getCell(i).getStringCellValue().trim().equals(colName.trim()))
+        for (int i = 0; i < row.getLastCellNum(); i++) {
+            if (row.getCell(i).getStringCellValue().trim().equals(colName.trim()))
                 colNum = i;
         }
         if (colNum == -1)
             return "";
 
-        threadLocalRow.set(threadLocalSheet.get().getRow(rowNum - 1));
-        if (threadLocalRow.get() == null)
+        row = sheet.getRow(rowNum - 1);
+        if (row == null)
             return "";
 
-        threadLocalCell.set(threadLocalRow.get().getCell(colNum));
-        if (threadLocalCell.get() == null)
+        XSSFCell cell = row.getCell(colNum);
+        if (cell == null)
             return "";
 
-        if (threadLocalCell.get().getCellType() == CellType.STRING)
-            return threadLocalCell.get().getStringCellValue();
-        else if (threadLocalCell.get().getCellType() == CellType.NUMERIC || threadLocalCell.get().getCellType() == CellType.FORMULA)
-            return String.valueOf(threadLocalCell.get().getNumericCellValue());
-        else if (threadLocalCell.get().getCellType() == CellType.BLANK)
+        if (cell.getCellType() == CellType.STRING)
+            return cell.getStringCellValue();
+        else if (cell.getCellType() == CellType.NUMERIC || cell.getCellType() == CellType.FORMULA)
+            return String.valueOf(cell.getNumericCellValue());
+        else if (cell.getCellType() == CellType.BLANK)
             return "";
         else
-            return String.valueOf(threadLocalCell.get().getBooleanCellValue());
+            return String.valueOf(cell.getBooleanCellValue());
     }
 
     public String getCellData(String sheetName, int colNum, int rowNum) throws IOException {
@@ -95,23 +92,23 @@ public class ExcelReader {
         if (index == -1)
             return "";
 
-        threadLocalSheet.set(getWorkbook().getSheetAt(index));
-        threadLocalRow.set(threadLocalSheet.get().getRow(rowNum - 1));
-        if (threadLocalRow.get() == null)
+        XSSFSheet sheet = getSheet(sheetName);
+        XSSFRow row = sheet.getRow(rowNum - 1);
+        if (row == null)
             return "";
 
-        threadLocalCell.set(threadLocalRow.get().getCell(colNum));
-        if (threadLocalCell.get() == null)
+        XSSFCell cell = row.getCell(colNum);
+        if (cell == null)
             return "";
 
-        if (threadLocalCell.get().getCellType() == CellType.STRING)
-            return threadLocalCell.get().getStringCellValue();
-        else if (threadLocalCell.get().getCellType() == CellType.NUMERIC || threadLocalCell.get().getCellType() == CellType.FORMULA)
-            return String.valueOf(threadLocalCell.get().getNumericCellValue());
-        else if (threadLocalCell.get().getCellType() == CellType.BLANK)
+        if (cell.getCellType() == CellType.STRING)
+            return cell.getStringCellValue();
+        else if (cell.getCellType() == CellType.NUMERIC || cell.getCellType() == CellType.FORMULA)
+            return String.valueOf(cell.getNumericCellValue());
+        else if (cell.getCellType() == CellType.BLANK)
             return "";
         else
-            return String.valueOf(threadLocalCell.get().getBooleanCellValue());
+            return String.valueOf(cell.getBooleanCellValue());
     }
 
     public boolean setCellData(String sheetName, String colName, int rowNum, String data) throws IOException {
@@ -125,26 +122,26 @@ public class ExcelReader {
             if (index == -1)
                 return false;
 
-            threadLocalSheet.set(getWorkbook().getSheetAt(index));
-            threadLocalRow.set(threadLocalSheet.get().getRow(0));
+            XSSFSheet sheet = getSheet(sheetName);
+            XSSFRow row = sheet.getRow(0);
 
-            for (int i = 0; i < threadLocalRow.get().getLastCellNum(); i++) {
-                if (threadLocalRow.get().getCell(i).getStringCellValue().trim().equals(colName))
+            for (int i = 0; i < row.getLastCellNum(); i++) {
+                if (row.getCell(i).getStringCellValue().trim().equals(colName))
                     colNum = i;
             }
             if (colNum == -1)
                 return false;
 
-            threadLocalSheet.get().autoSizeColumn(colNum);
-            threadLocalRow.set(threadLocalSheet.get().getRow(rowNum - 1));
-            if (threadLocalRow.get() == null)
-                threadLocalRow.set(threadLocalSheet.get().createRow(rowNum - 1));
+            sheet.autoSizeColumn(colNum);
+            row = sheet.getRow(rowNum - 1);
+            if (row == null)
+                row = sheet.createRow(rowNum - 1);
 
-            threadLocalCell.set(threadLocalRow.get().getCell(colNum));
-            if (threadLocalCell.get() == null)
-                threadLocalCell.set(threadLocalRow.get().createCell(colNum));
+            XSSFCell cell = row.getCell(colNum);
+            if (cell == null)
+                cell = row.createCell(colNum);
 
-            threadLocalCell.get().setCellValue(data);
+            cell.setCellValue(data);
 
             fileOut = new FileOutputStream(path);
             getWorkbook().write(fileOut);
@@ -171,30 +168,28 @@ public class ExcelReader {
             if (index == -1)
                 return false;
 
-            threadLocalSheet.set(getWorkbook().getSheetAt(index));
-            threadLocalRow.set(threadLocalSheet.get().getRow(0));
+            XSSFSheet sheet = getSheet(sheetName);
+            XSSFRow row = sheet.getRow(0);
 
-            for (int i = 0; i < threadLocalRow.get().getLastCellNum(); i++) {
-                if (threadLocalRow.get().getCell(i).getStringCellValue().trim().equalsIgnoreCase(colName))
+            for (int i = 0; i < row.getLastCellNum(); i++) {
+                if (row.getCell(i).getStringCellValue().trim().equalsIgnoreCase(colName))
                     colNum = i;
             }
 
             if (colNum == -1)
                 return false;
 
-            threadLocalSheet.get().autoSizeColumn(colNum);
-            threadLocalRow.set(threadLocalSheet.get().getRow(rowNum - 1));
-            if (threadLocalRow.get() == null)
-                threadLocalRow.set(threadLocalSheet.get().createRow(rowNum - 1));
+            sheet.autoSizeColumn(colNum);
+            row = sheet.getRow(rowNum - 1);
+            if (row == null)
+                row = sheet.createRow(rowNum - 1);
 
-            threadLocalCell.set(threadLocalRow.get().getCell(colNum));
-            if (threadLocalCell.get() == null)
-                threadLocalCell.set(threadLocalRow.get().createCell(colNum));
+            XSSFCell cell = row.getCell(colNum);
+            if (cell == null)
+                cell = row.createCell(colNum);
 
-            threadLocalCell.get().setCellValue(data);
+            cell.setCellValue(data);
             XSSFCreationHelper createHelper = threadLocalWorkbook.get().getCreationHelper();
-
-            // cell style for hyperlinks
 
             CellStyle hlink_style = threadLocalWorkbook.get().createCellStyle();
             XSSFFont hlink_font = threadLocalWorkbook.get().createFont();
@@ -202,17 +197,13 @@ public class ExcelReader {
             hlink_font.setColor(IndexedColors.BLUE.getIndex());
             hlink_style.setFont(hlink_font);
 
-           // XSSFHyperlink link = createHelper.createHyperlink(XSSFHyperlink.LINK_FILE);
             XSSFHyperlink link = createHelper.createHyperlink(HyperlinkType.FILE);
-
             link.setAddress(url);
-            threadLocalCell.get().setHyperlink(link);
-            threadLocalCell.get().setCellStyle(hlink_style);
-            
-            
+            cell.setHyperlink(link);
+            cell.setCellStyle(hlink_style);
 
             fileOut = new FileOutputStream(path);
-            threadLocalWorkbook.get().write(fileOut);
+            getWorkbook().write(fileOut);
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -264,5 +255,6 @@ public class ExcelReader {
             }
         }
         return true;
-    }}
+    }
+}
    
