@@ -35,8 +35,7 @@ public class GetEmployeeAPITest extends BaseTest
 		super();
 		EmployeeAPI = new EmployeeAPI();
 		DataUtil =new DataUtil();
-
-		setFilePath(prop.getProperty("filePathToExcelForGet"));
+		setFilePath(System.getProperty("user.dir")+prop.getProperty("filePathToExcelForGet"));
 		setSheetName(prop.getProperty("GetUserSheetName"));
 		excel = new ExcelReader(getFilePath());
 

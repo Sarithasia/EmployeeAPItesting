@@ -36,7 +36,7 @@ public class UpdateEmployeeAPITest extends BaseTest {
 		super();	
 		DataUtil =new DataUtil();
 
-		setFilePath(prop.getProperty("filePathToExcelForUpdation"));
+		setFilePath(System.getProperty("user.dir")+prop.getProperty("filePathToExcelForUpdation"));
 		setSheetName(prop.getProperty("UpdateUserSheetName"));
 		excel = new ExcelReader(getFilePath());
 		EmployeeAPI = new EmployeeAPI();

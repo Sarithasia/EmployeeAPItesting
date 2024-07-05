@@ -2,16 +2,16 @@
 <testng-results ignored="4" total="23" passed="15" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-05T14:19:58 IST" name="Suite" finished-at="2024-07-05T14:20:16 IST" duration-ms="17595">
+  <suite started-at="2024-07-05T14:36:37 IST" name="Suite" finished-at="2024-07-05T14:36:51 IST" duration-ms="13371">
     <groups>
     </groups>
-    <test started-at="2024-07-05T14:19:58 IST" name="Test" finished-at="2024-07-05T14:20:16 IST" duration-ms="17595">
+    <test started-at="2024-07-05T14:36:37 IST" name="Test" finished-at="2024-07-05T14:36:51 IST" duration-ms="13371">
       <class name="com.poppulo.employee_api_tests.CreateEmployeeAPITests">
-        <test-method is-config="true" signature="Initialization()[pri:0, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:20:00 IST" name="Initialization" finished-at="2024-07-05T14:20:00 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="Initialization()[pri:0, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:36:38 IST" name="Initialization" finished-at="2024-07-05T14:36:38 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initialization -->
-        <test-method signature="TC001_ValidateCustomerApiWithValidData(java.util.HashMap)[pri:1, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:20:00 IST" name="TC001_ValidateCustomerApiWithValidData" data-provider="data" finished-at="2024-07-05T14:20:02 IST" duration-ms="2448" status="PASS">
+        <test-method signature="TC001_ValidateCustomerApiWithValidData(java.util.HashMap)[pri:1, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:36:38 IST" name="TC001_ValidateCustomerApiWithValidData" data-provider="data" finished-at="2024-07-05T14:36:41 IST" duration-ms="2956" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC001_ValidateCustomerApiWithValidData -->
-        <test-method signature="TC001_ValidateCustomerApiWithValidData(java.util.HashMap)[pri:1, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:20:02 IST" name="TC001_ValidateCustomerApiWithValidData" data-provider="data" finished-at="2024-07-05T14:20:03 IST" duration-ms="541" status="PASS">
+        <test-method is-config="true" signature="Initialization()[pri:0, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:36:41 IST" name="Initialization" finished-at="2024-07-05T14:36:41 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Initialization -->
+        <test-method signature="TC001_ValidateCustomerApiWithValidData(java.util.HashMap)[pri:1, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:36:41 IST" name="TC001_ValidateCustomerApiWithValidData" data-provider="data" finished-at="2024-07-05T14:36:41 IST" duration-ms="500" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,11 +37,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC001_ValidateCustomerApiWithValidData -->
-        <test-method is-config="true" signature="Initialization()[pri:0, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:20:02 IST" name="Initialization" finished-at="2024-07-05T14:20:02 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="Initialization()[pri:0, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:36:42 IST" name="Initialization" finished-at="2024-07-05T14:36:42 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initialization -->
-        <test-method signature="TC002_ValidateCustomerApiWithInValidData(java.util.HashMap)[pri:2, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:20:03 IST" name="TC002_ValidateCustomerApiWithInValidData" data-provider="data" finished-at="2024-07-05T14:20:03 IST" duration-ms="727" status="PASS">
+        <test-method signature="TC002_ValidateCustomerApiWithInValidData(java.util.HashMap)[pri:2, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:36:42 IST" name="TC002_ValidateCustomerApiWithInValidData" data-provider="data" finished-at="2024-07-05T14:36:42 IST" duration-ms="477" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,15 +52,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC002_ValidateCustomerApiWithInValidData -->
-        <test-method is-config="true" signature="Initialization()[pri:0, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:20:03 IST" name="Initialization" finished-at="2024-07-05T14:20:03 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="Initialization()[pri:0, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:36:42 IST" name="Initialization" finished-at="2024-07-05T14:36:42 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initialization -->
-        <test-method is-config="true" signature="Initialization()[pri:0, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:20:03 IST" name="Initialization" finished-at="2024-07-05T14:20:03 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Initialization -->
-        <test-method signature="TC002_ValidateCustomerApiWithInValidData(java.util.HashMap)[pri:2, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:20:03 IST" name="TC002_ValidateCustomerApiWithInValidData" data-provider="data" finished-at="2024-07-05T14:20:04 IST" duration-ms="527" status="PASS">
+        <test-method signature="TC002_ValidateCustomerApiWithInValidData(java.util.HashMap)[pri:2, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:36:42 IST" name="TC002_ValidateCustomerApiWithInValidData" data-provider="data" finished-at="2024-07-05T14:36:42 IST" duration-ms="436" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -67,7 +67,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC002_ValidateCustomerApiWithInValidData -->
-        <test-method signature="TC002_ValidateCustomerApiWithInValidData(java.util.HashMap)[pri:2, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:20:04 IST" name="TC002_ValidateCustomerApiWithInValidData" data-provider="data" finished-at="2024-07-05T14:20:04 IST" duration-ms="455" status="PASS">
+        <test-method signature="TC002_ValidateCustomerApiWithInValidData(java.util.HashMap)[pri:2, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:36:42 IST" name="TC002_ValidateCustomerApiWithInValidData" data-provider="data" finished-at="2024-07-05T14:36:44 IST" duration-ms="1447" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -78,15 +78,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC002_ValidateCustomerApiWithInValidData -->
-        <test-method is-config="true" signature="Initialization()[pri:0, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:20:04 IST" name="Initialization" finished-at="2024-07-05T14:20:04 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="Initialization()[pri:0, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:36:42 IST" name="Initialization" finished-at="2024-07-05T14:36:42 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initialization -->
-        <test-method is-config="true" signature="Initialization()[pri:0, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:20:04 IST" name="Initialization" finished-at="2024-07-05T14:20:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="Initialization()[pri:0, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:36:44 IST" name="Initialization" finished-at="2024-07-05T14:36:44 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initialization -->
-        <test-method signature="TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee(java.util.HashMap)[pri:3, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:20:04 IST" name="TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee" data-provider="data" finished-at="2024-07-05T14:20:06 IST" duration-ms="1359" status="PASS">
+        <test-method signature="TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee(java.util.HashMap)[pri:3, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:36:44 IST" name="TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee" data-provider="data" finished-at="2024-07-05T14:36:44 IST" duration-ms="451" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -97,11 +97,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee -->
-        <test-method is-config="true" signature="Initialization()[pri:0, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:20:06 IST" name="Initialization" finished-at="2024-07-05T14:20:06 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="Initialization()[pri:0, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:36:44 IST" name="Initialization" finished-at="2024-07-05T14:36:44 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initialization -->
-        <test-method signature="TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee(java.util.HashMap)[pri:3, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:20:06 IST" name="TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee" data-provider="data" finished-at="2024-07-05T14:20:06 IST" duration-ms="582" status="PASS">
+        <test-method signature="TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee(java.util.HashMap)[pri:3, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:36:44 IST" name="TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee" data-provider="data" finished-at="2024-07-05T14:36:45 IST" duration-ms="421" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -112,21 +112,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee -->
-        <test-method is-config="true" signature="Initialization()[pri:0, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:20:06 IST" name="Initialization" finished-at="2024-07-05T14:20:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="Initialization()[pri:0, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:36:45 IST" name="Initialization" finished-at="2024-07-05T14:36:45 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initialization -->
-        <test-method signature="TC004_ValidateUniqueEmployeeIds()[pri:4, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:20:06 IST" name="TC004_ValidateUniqueEmployeeIds" finished-at="2024-07-05T14:20:06 IST" depends-on-methods="com.poppulo.employee_api_tests.CreateEmployeeAPITests.TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee" duration-ms="3" status="PASS">
+        <test-method signature="TC004_ValidateUniqueEmployeeIds()[pri:4, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:36:45 IST" name="TC004_ValidateUniqueEmployeeIds" finished-at="2024-07-05T14:36:45 IST" depends-on-methods="com.poppulo.employee_api_tests.CreateEmployeeAPITests.TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC004_ValidateUniqueEmployeeIds -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:20:16 IST" name="tearDown" finished-at="2024-07-05T14:20:16 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.poppulo.employee_api_tests.CreateEmployeeAPITests@53093491]" started-at="2024-07-05T14:36:51 IST" name="tearDown" finished-at="2024-07-05T14:36:51 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.poppulo.employee_api_tests.CreateEmployeeAPITests -->
       <class name="com.poppulo.employee_api_tests.GetEmployeeAPITest">
-        <test-method signature="TCG01_ValidateGetRequestForValidUser(java.util.HashMap)[pri:1, instance:com.poppulo.employee_api_tests.GetEmployeeAPITest@6b3871d6]" started-at="2024-07-05T14:20:06 IST" name="TCG01_ValidateGetRequestForValidUser" data-provider="getdata" finished-at="2024-07-05T14:20:07 IST" duration-ms="225" status="PASS">
+        <test-method signature="TCG01_ValidateGetRequestForValidUser(java.util.HashMap)[pri:1, instance:com.poppulo.employee_api_tests.GetEmployeeAPITest@6b3871d6]" started-at="2024-07-05T14:36:45 IST" name="TCG01_ValidateGetRequestForValidUser" data-provider="getdata" finished-at="2024-07-05T14:36:45 IST" duration-ms="217" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -137,13 +137,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCG01_ValidateGetRequestForValidUser -->
-        <test-method signature="TCG02_ValidateGetRequestForNonExistentUser()[pri:2, instance:com.poppulo.employee_api_tests.GetEmployeeAPITest@6b3871d6]" started-at="2024-07-05T14:20:07 IST" name="TCG02_ValidateGetRequestForNonExistentUser" finished-at="2024-07-05T14:20:08 IST" duration-ms="1326" status="PASS">
+        <test-method signature="TCG02_ValidateGetRequestForNonExistentUser()[pri:2, instance:com.poppulo.employee_api_tests.GetEmployeeAPITest@6b3871d6]" started-at="2024-07-05T14:36:45 IST" name="TCG02_ValidateGetRequestForNonExistentUser" finished-at="2024-07-05T14:36:45 IST" duration-ms="130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCG02_ValidateGetRequestForNonExistentUser -->
       </class> <!-- com.poppulo.employee_api_tests.GetEmployeeAPITest -->
       <class name="com.poppulo.employee_api_tests.UpdateEmployeeAPITest">
-        <test-method signature="TCUO1_validateValidEmployeeUpdate(java.util.HashMap)[pri:1, instance:com.poppulo.employee_api_tests.UpdateEmployeeAPITest@2ca6546f]" started-at="2024-07-05T14:20:08 IST" name="TCUO1_validateValidEmployeeUpdate" data-provider="updateData" finished-at="2024-07-05T14:20:09 IST" duration-ms="462" status="PASS">
+        <test-method signature="TCUO1_validateValidEmployeeUpdate(java.util.HashMap)[pri:1, instance:com.poppulo.employee_api_tests.UpdateEmployeeAPITest@2ca6546f]" started-at="2024-07-05T14:36:45 IST" name="TCUO1_validateValidEmployeeUpdate" data-provider="updateData" finished-at="2024-07-05T14:36:46 IST" duration-ms="427" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -154,7 +154,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCUO1_validateValidEmployeeUpdate -->
-        <test-method signature="TCU02_validateUpdationWithInvalidEmployeeId(java.util.HashMap)[pri:2, instance:com.poppulo.employee_api_tests.UpdateEmployeeAPITest@2ca6546f]" started-at="2024-07-05T14:20:09 IST" name="TCU02_validateUpdationWithInvalidEmployeeId" data-provider="updateData" finished-at="2024-07-05T14:20:09 IST" duration-ms="715" status="PASS">
+        <test-method signature="TCU02_validateUpdationWithInvalidEmployeeId(java.util.HashMap)[pri:2, instance:com.poppulo.employee_api_tests.UpdateEmployeeAPITest@2ca6546f]" started-at="2024-07-05T14:36:46 IST" name="TCU02_validateUpdationWithInvalidEmployeeId" data-provider="updateData" finished-at="2024-07-05T14:36:46 IST" duration-ms="557" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -165,7 +165,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCU02_validateUpdationWithInvalidEmployeeId -->
-        <test-method signature="TCU03_validateDataUpdationOfValidEmployeeWithInvalidData(java.util.HashMap)[pri:3, instance:com.poppulo.employee_api_tests.UpdateEmployeeAPITest@2ca6546f]" started-at="2024-07-05T14:20:09 IST" name="TCU03_validateDataUpdationOfValidEmployeeWithInvalidData" data-provider="updateData" finished-at="2024-07-05T14:20:10 IST" duration-ms="472" status="PASS">
+        <test-method signature="TCU03_validateDataUpdationOfValidEmployeeWithInvalidData(java.util.HashMap)[pri:3, instance:com.poppulo.employee_api_tests.UpdateEmployeeAPITest@2ca6546f]" started-at="2024-07-05T14:36:46 IST" name="TCU03_validateDataUpdationOfValidEmployeeWithInvalidData" data-provider="updateData" finished-at="2024-07-05T14:36:47 IST" duration-ms="484" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -178,11 +178,11 @@
         </test-method> <!-- TCU03_validateDataUpdationOfValidEmployeeWithInvalidData -->
       </class> <!-- com.poppulo.employee_api_tests.UpdateEmployeeAPITest -->
       <class name="com.poppulo.employee_api_tests.DeleteEmployeeTest">
-        <test-method signature="TCD001_ValidateValidEmployeeDeletion()[pri:1, instance:com.poppulo.employee_api_tests.DeleteEmployeeTest@4c0884e8]" started-at="2024-07-05T14:20:10 IST" name="TCD001_ValidateValidEmployeeDeletion" finished-at="2024-07-05T14:20:10 IST" duration-ms="444" status="PASS">
+        <test-method signature="TCD001_ValidateValidEmployeeDeletion()[pri:1, instance:com.poppulo.employee_api_tests.DeleteEmployeeTest@4c0884e8]" started-at="2024-07-05T14:36:47 IST" name="TCD001_ValidateValidEmployeeDeletion" finished-at="2024-07-05T14:36:47 IST" duration-ms="410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCD001_ValidateValidEmployeeDeletion -->
-        <test-method signature="TCD002_ValidatetNonExistentEmployeeDeletion()[pri:2, instance:com.poppulo.employee_api_tests.DeleteEmployeeTest@4c0884e8]" started-at="2024-07-05T14:20:10 IST" name="TCD002_ValidatetNonExistentEmployeeDeletion" finished-at="2024-07-05T14:20:11 IST" duration-ms="722" status="FAIL">
+        <test-method signature="TCD002_ValidatetNonExistentEmployeeDeletion()[pri:2, instance:com.poppulo.employee_api_tests.DeleteEmployeeTest@4c0884e8]" started-at="2024-07-05T14:36:47 IST" name="TCD002_ValidatetNonExistentEmployeeDeletion" finished-at="2024-07-05T14:36:48 IST" duration-ms="409" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Expected status code 404 (Not Found),Able to delete NonExistent employee expected [404] but found [204]]]>
@@ -229,7 +229,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCD002_ValidatetNonExistentEmployeeDeletion -->
-        <test-method signature="TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat()[pri:3, instance:com.poppulo.employee_api_tests.DeleteEmployeeTest@4c0884e8]" started-at="2024-07-05T14:20:11 IST" name="TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat" finished-at="2024-07-05T14:20:12 IST" duration-ms="759" status="FAIL">
+        <test-method signature="TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat()[pri:3, instance:com.poppulo.employee_api_tests.DeleteEmployeeTest@4c0884e8]" started-at="2024-07-05T14:36:48 IST" name="TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat" finished-at="2024-07-05T14:36:48 IST" duration-ms="418" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Expected status code 400 (Bad Request),Able to delete  employee with InvalidIdFormat expected [400] but found [204]]]>
@@ -276,7 +276,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat -->
-        <test-method signature="TCD004_ValidateDeleteEmployeeWithEmptyId()[pri:4, instance:com.poppulo.employee_api_tests.DeleteEmployeeTest@4c0884e8]" started-at="2024-07-05T14:20:12 IST" name="TCD004_ValidateDeleteEmployeeWithEmptyId" finished-at="2024-07-05T14:20:13 IST" duration-ms="990" status="FAIL">
+        <test-method signature="TCD004_ValidateDeleteEmployeeWithEmptyId()[pri:4, instance:com.poppulo.employee_api_tests.DeleteEmployeeTest@4c0884e8]" started-at="2024-07-05T14:36:48 IST" name="TCD004_ValidateDeleteEmployeeWithEmptyId" finished-at="2024-07-05T14:36:48 IST" duration-ms="445" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Expected status code 400 (Bad Request),Able to delete  employee with empty id expected [400] but found [204]]]>
@@ -323,7 +323,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCD004_ValidateDeleteEmployeeWithEmptyId -->
-        <test-method signature="TCD005_ValidateDeleteEmployeeWithMalformedRequest()[pri:5, instance:com.poppulo.employee_api_tests.DeleteEmployeeTest@4c0884e8]" started-at="2024-07-05T14:20:13 IST" name="TCD005_ValidateDeleteEmployeeWithMalformedRequest" finished-at="2024-07-05T14:20:13 IST" duration-ms="500" status="FAIL">
+        <test-method signature="TCD005_ValidateDeleteEmployeeWithMalformedRequest()[pri:5, instance:com.poppulo.employee_api_tests.DeleteEmployeeTest@4c0884e8]" started-at="2024-07-05T14:36:48 IST" name="TCD005_ValidateDeleteEmployeeWithMalformedRequest" finished-at="2024-07-05T14:36:49 IST" duration-ms="429" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Expected status code 400 (Bad Request),Able to delete  employee with malformed delete request expected [400] but found [204]]]>
@@ -370,7 +370,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCD005_ValidateDeleteEmployeeWithMalformedRequest -->
-        <test-method signature="TCD006_ValidateSimultaneousDeleteOperations()[pri:6, instance:com.poppulo.employee_api_tests.DeleteEmployeeTest@4c0884e8]" started-at="2024-07-05T14:20:13 IST" name="TCD006_ValidateSimultaneousDeleteOperations" finished-at="2024-07-05T14:20:16 IST" duration-ms="2399" status="PASS">
+        <test-method signature="TCD006_ValidateSimultaneousDeleteOperations()[pri:6, instance:com.poppulo.employee_api_tests.DeleteEmployeeTest@4c0884e8]" started-at="2024-07-05T14:36:49 IST" name="TCD006_ValidateSimultaneousDeleteOperations" finished-at="2024-07-05T14:36:51 IST" duration-ms="1690" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TCD006_ValidateSimultaneousDeleteOperations -->

@@ -48,9 +48,8 @@ public class CreateEmployeeAPITests extends BaseTest
 	public CreateEmployeeAPITests() throws IOException 
 	{
 		super();
-		DataUtil =new DataUtil();
-
-		setFilePath(prop.getProperty("filePathToExcelForCreation"));
+		DataUtil =new DataUtil();		
+		setFilePath(System.getProperty("user.dir")+prop.getProperty("filePathToExcelForCreation"));
 		setSheetName(prop.getProperty("CreateUserSheetName"));
 		excel = new ExcelReader(getFilePath());
 
@@ -59,7 +58,7 @@ public class CreateEmployeeAPITests extends BaseTest
 	@BeforeMethod()
 	public void Initialization() throws IOException 
 	{
-		setFilePath(prop.getProperty("filePathToExcelForCreation"));
+		setFilePath(System.getProperty("user.dir")+prop.getProperty("filePathToExcelForCreation"));
 		setSheetName(prop.getProperty("CreateUserSheetName"));
 		excel = new ExcelReader(getFilePath());
 		softassert = new SoftAssert();
