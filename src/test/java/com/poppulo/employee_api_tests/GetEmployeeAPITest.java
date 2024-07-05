@@ -6,6 +6,8 @@ import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -21,12 +23,15 @@ import com.poppulo.util.ExcelReader;
 
 import io.restassured.response.Response;
 
-public class GetEmployeeAPITest extends BaseTest {
+public class GetEmployeeAPITest extends BaseTest 
+{
 	private  ExcelReader excel;
 	EmployeeAPI EmployeeAPI;
 	DataUtil DataUtil;
+	Logger log = LogManager.getLogger(GetEmployeeAPITest.class);
 
-	public GetEmployeeAPITest() throws IOException {
+	public GetEmployeeAPITest() throws IOException
+	{
 		super();
 		EmployeeAPI = new EmployeeAPI();
 		DataUtil =new DataUtil();
@@ -46,9 +51,17 @@ public class GetEmployeeAPITest extends BaseTest {
 	
 	@Test(priority = 1, dataProvider = "getdata")
 
-	public void testGetUserDataSuccess(HashMap<String, String> data) {
+	public void TCG01_ValidateGetRequestForValidUser(HashMap<String, String> data) 
+	{
+		
+
+		log.info("Starting test with data: {}", data);
 
 		Response response = EmployeeAPI.getEmployee(2, "getUserEndPoint");
+		response.prettyPrint();
+
+		log.debug("Response status code: {}", response.getStatusCode());
+		log.debug("Response body: {}", response.getBody().asString());
 
 		// Validate using POJO fields
 		UserDataResponse userDataResponse = response.as(UserDataResponse.class);
@@ -58,10 +71,13 @@ public class GetEmployeeAPITest extends BaseTest {
 
 		// Assertions using POJO data'
 		SoftAssert softAssert = new SoftAssert();
-		try {
+		try 
+		{
 			int expectedId = Double.valueOf(data.get("id")).intValue();
 			softAssert.assertEquals(user.getId(), expectedId, "ID mismatch");
-		} catch (NumberFormatException e) {
+		} 
+		catch (NumberFormatException e) 
+		{
 			softAssert.fail("Invalid ID format in test data: " + data.get("id"));
 		}
 		softAssert.assertEquals(response.getStatusCode(), 200, "Incorrect status code for successful get request");
@@ -72,12 +88,21 @@ public class GetEmployeeAPITest extends BaseTest {
 		softAssert.assertEquals(supportData.getUrl(), data.get("url"), "Support URL mismatch");
 		softAssert.assertEquals(supportData.getText(), data.get("text"), "Support text mismatch");
 		softAssert.assertAll();
+		log.info("Test successfully completed.");
+
 	}
 
 	@Test(priority = 2)
-	public void testGetNonExistentUser() {
+	public void TCG02_ValidateGetRequestForNonExistentUser() 
+	{
+		
 		Response response = EmployeeAPI.getEmployee(999, "getUserEndPoint");
+		response.prettyPrint();
+		log.debug("Response status code: {}", response.getStatusCode());
+		log.debug("Response body: {}", response.getBody().asString());
 		Assert.assertEquals(404, response.getStatusCode(), "Incorrect status code for no content ");
+		log.info("Test successfully completed.");
+
 	}
 
 }

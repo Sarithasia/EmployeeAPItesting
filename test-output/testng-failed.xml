@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="org.testng.reporters.XMLReporter"/>
+    <listener class-name="com.poppulo.util.ExtentReportListener"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="com.poppulo.employee_api_tests.DeleteEmployeeTest">
         <methods>
-          <include name="testDeleteEmployeeWithInvalidIdFormat"/>
+          <include name="TCD002_ValidatetNonExistentEmployeeDeletion"/>
           <include name="tearDown"/>
-          <include name="testDeleteEmployeeWithEmptyId"/>
-          <include name="testDeleteNonExistentEmployee"/>
-          <include name="testDeleteEmployeeWithMalformedRequest"/>
+          <include name="TCD004_ValidateDeleteEmployeeWithEmptyId"/>
+          <include name="TCD005_ValidateDeleteEmployeeWithMalformedRequest"/>
+          <include name="TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat"/>
         </methods>
       </class> <!-- com.poppulo.employee_api_tests.DeleteEmployeeTest -->
     </classes>

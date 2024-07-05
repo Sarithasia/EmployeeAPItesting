@@ -2,6 +2,8 @@ package com.poppulo.employee_api_tests;
 
 import java.io.IOException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -16,6 +18,8 @@ public class DeleteEmployeeTest extends BaseTest {
 	SoftAssert soft;
 	EmployeeAPI EmployeeAPI;
 
+	Logger log = LogManager.getLogger(DeleteEmployeeTest.class);
+
 	public DeleteEmployeeTest() throws IOException {
 		super();
 		EmployeeAPI = new EmployeeAPI();
@@ -24,7 +28,7 @@ public class DeleteEmployeeTest extends BaseTest {
 	}
 
 	@Test(priority = 1)
-	public void testVerifyEmployeeDeletion() {
+	public void TCD001_ValidateValidEmployeeDeletion() {
 		int validEmployeeId = 971;
 
 		Response response = EmployeeAPI.deleteEmployee("deleteUserEndPoint", validEmployeeId);
@@ -36,33 +40,37 @@ public class DeleteEmployeeTest extends BaseTest {
 	}
 
 	@Test(priority = 2)
-	public void testDeleteNonExistentEmployee() {
+	public void TCD002_ValidatetNonExistentEmployeeDeletion() {
 		int nonExistentEmployeeId = -9999; // Replace with a non-existent employee ID
 		Response response = EmployeeAPI.deleteEmployee("deleteUserEndPoint", nonExistentEmployeeId);
+		response.prettyPrint();
+
 		Assert.assertEquals(response.getStatusCode(), 404,
 				"Expected status code 404 (Not Found),Able to delete NonExistent employee");
 	}
 
 	@Test(priority = 3)
-	public void testDeleteEmployeeWithInvalidIdFormat() {
+	public void TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat() {
 		String invalidEmployeeId = "a$%bc"; // Invalid employee ID format
 		Response response = EmployeeAPI.deleteEmployee("deleteUserEndPoint", invalidEmployeeId);
+		response.prettyPrint();
 
 		Assert.assertEquals(response.getStatusCode(), 400,
 				"Expected status code 400 (Bad Request),Able to delete  employee with InvalidIdFormat");
 	}
 
 	@Test(priority = 4)
-	public void testDeleteEmployeeWithEmptyId() {
+	public void TCD004_ValidateDeleteEmployeeWithEmptyId() {
 		String emptyEmployeeId = ""; // Empty employee ID
 		Response response = EmployeeAPI.deleteEmployee("deleteUserEndPoint", emptyEmployeeId);
+		response.prettyPrint();
 
 		Assert.assertEquals(response.getStatusCode(), 400,
 				"Expected status code 400 (Bad Request),Able to delete  employee with empty id");
 	}
 
 	@Test(priority = 5)
-	public void testDeleteEmployeeWithMalformedRequest() {
+	public void TCD005_ValidateDeleteEmployeeWithMalformedRequest() {
 		int employeeIdToDelete = 2;
 
 		// Sending DELETE request without required headers
@@ -70,13 +78,13 @@ public class DeleteEmployeeTest extends BaseTest {
 		Response response = RestAssured.given()
 				// .header("Content-Type", "application/json") // Missing header intentionally
 				.delete("/employees/" + employeeIdToDelete);
-
+		response.prettyPrint();
 		Assert.assertEquals(response.getStatusCode(), 400,
 				"Expected status code 400 (Bad Request),Able to delete  employee with malformed delete request");
 	}
 
 	@Test(priority = 6)
-	public void testSimultaneousDeleteOperations() {
+	public void TCD006_ValidateSimultaneousDeleteOperations() {
 
 		// Assume we have multiple employee IDs to delete simultaneously
 		int[] employeeIds = { 123, 124, 125 };
@@ -84,6 +92,7 @@ public class DeleteEmployeeTest extends BaseTest {
 		// Perform delete operations for each employee ID
 		for (int id : employeeIds) {
 			Response response = EmployeeAPI.deleteEmployee("deleteUserEndPoint", id);
+			response.prettyPrint();
 
 			soft.assertEquals(response.getStatusCode(), 204, "Expected status code 200 (OK) for employee ID: " + id);
 		}

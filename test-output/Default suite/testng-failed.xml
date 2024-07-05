@@ -5,11 +5,11 @@
     <classes>
       <class name="com.poppulo.employee_api_tests.DeleteEmployeeTest">
         <methods>
-          <include name="testDeleteEmployeeWithInvalidIdFormat"/>
+          <include name="TCD002_ValidatetNonExistentEmployeeDeletion"/>
           <include name="tearDown"/>
-          <include name="testDeleteEmployeeWithEmptyId"/>
-          <include name="testDeleteNonExistentEmployee"/>
-          <include name="testDeleteEmployeeWithMalformedRequest"/>
+          <include name="TCD004_ValidateDeleteEmployeeWithEmptyId"/>
+          <include name="TCD005_ValidateDeleteEmployeeWithMalformedRequest"/>
+          <include name="TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat"/>
         </methods>
       </class> <!-- com.poppulo.employee_api_tests.DeleteEmployeeTest -->
     </classes>

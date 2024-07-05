@@ -53,6 +53,7 @@ public class CreateEmployeeAPITests extends BaseTest
 		setFilePath(prop.getProperty("filePathToExcelForCreation"));
 		setSheetName(prop.getProperty("CreateUserSheetName"));
 		excel = new ExcelReader(getFilePath());
+
 	}
 	
 	@BeforeMethod()
@@ -73,7 +74,7 @@ public class CreateEmployeeAPITests extends BaseTest
 	}
 
 	@Test(priority = 1, dataProvider= "data")
-	public void ValidateCustomerApiWithValidData(HashMap<String, String> employeeData) {
+	public void TC001_ValidateCustomerApiWithValidData(HashMap<String, String> employeeData) {
 
 		log.info("Starting test with data: {}", employeeData);
 
@@ -98,7 +99,7 @@ public class CreateEmployeeAPITests extends BaseTest
 
 //
 	@Test(priority = 2, dataProvider = "data")
-	public void ValidateCustomerApiWithInValidData(HashMap<String, String> employeeData) {
+	public void TC002_ValidateCustomerApiWithInValidData(HashMap<String, String> employeeData) {
 
 		// Send POST request
 
@@ -119,7 +120,7 @@ public class CreateEmployeeAPITests extends BaseTest
 	}
 
 	@Test(priority = 3, dataProvider = "data")
-	public void ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee(
+	public void TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee(
 			HashMap<String, String> employeeData) {
 
 		EMPLOYEE_COUNT_IN_EXCEL = employeeData.size();
@@ -143,8 +144,8 @@ public class CreateEmployeeAPITests extends BaseTest
 
 	}
 
-	@Test(priority = 4, dependsOnMethods = "ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee")
-	public void verifyUniqueEmployeeIds() {
+	@Test(priority = 4, dependsOnMethods = "TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee")
+	public void TC004_ValidateUniqueEmployeeIds() {
 		// Verify HashSet size to ensure all IDs are unique
 		softassert.assertEquals(id.size(), EMPLOYEE_COUNT_IN_EXCEL,
 				"Number of unique IDs not match the number of test data rows");
