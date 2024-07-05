@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.poppulo.employee_api_tests.GetEmployeeAPITest">
+      <class name="com.poppulo.employee_api_tests.UpdateEmployeeAPITest">
         <methods>
-          <include name="TCG01_ValidateGetRequestForValidUser"/>
+          <include name="TC005__ValidateUpdateAPILatency" invocation-numbers="0"/>
           <include name="tearDown"/>
+          <include name="Initialization"/>
         </methods>
-      </class> <!-- com.poppulo.employee_api_tests.GetEmployeeAPITest -->
+      </class> <!-- com.poppulo.employee_api_tests.UpdateEmployeeAPITest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

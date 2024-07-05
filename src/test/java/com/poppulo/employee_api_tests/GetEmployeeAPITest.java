@@ -9,6 +9,7 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -29,16 +30,27 @@ public class GetEmployeeAPITest extends BaseTest
 	EmployeeAPI EmployeeAPI;
 	DataUtil DataUtil;
 	Logger log = LogManager.getLogger(GetEmployeeAPITest.class);
-
+	SoftAssert	softAssert;
+	
 	public GetEmployeeAPITest() throws IOException
 	{
 		super();
-		EmployeeAPI = new EmployeeAPI();
-		DataUtil =new DataUtil();
 		setFilePath(System.getProperty("user.dir")+prop.getProperty("filePathToExcelForGet"));
 		setSheetName(prop.getProperty("GetUserSheetName"));
 		excel = new ExcelReader(getFilePath());
+		DataUtil =new DataUtil();
 
+
+
+	}
+	
+	@BeforeMethod()
+	public void Initialization() throws IOException 
+	{	
+		     
+				
+		 softAssert = new SoftAssert();
+		EmployeeAPI = new EmployeeAPI();
 	}
 
 	
@@ -69,7 +81,6 @@ public class GetEmployeeAPITest extends BaseTest
 		SupportData supportData = userDataResponse.getSupport();
 
 		// Assertions using POJO data'
-		SoftAssert softAssert = new SoftAssert();
 		try 
 		{
 			int expectedId = Double.valueOf(data.get("id")).intValue();
@@ -103,5 +114,27 @@ public class GetEmployeeAPITest extends BaseTest
 		log.info("Test successfully completed.");
 
 	}
+	
+	@Test(priority = 3)
+
+	public void TCG03_ValidateGetAPILatency() {
+		
+        // Send API request and measure response time
+        long startTime = System.currentTimeMillis();
+		Response response = EmployeeAPI.getEmployee(2, "getUserEndPoint");
+
+        long endTime = System.currentTimeMillis();
+
+        // Calculate response time in milliseconds
+        long responseTime = endTime - startTime;
+        System.out.println("API Response Time: " + responseTime + " milliseconds");
+
+        // Validate response status code
+        softAssert.assertEquals(response.getStatusCode(), 200, "Expected status code 200 but found " + response.getStatusCode());
+
+        softAssert.assertTrue(responseTime <= 2000, "Response time exceeds threshold of 2000 milliseconds");
+        softAssert.assertAll();
+    }
+	
 
 }

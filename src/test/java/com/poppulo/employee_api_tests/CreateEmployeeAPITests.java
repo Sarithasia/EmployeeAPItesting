@@ -58,9 +58,7 @@ public class CreateEmployeeAPITests extends BaseTest
 	@BeforeMethod()
 	public void Initialization() throws IOException 
 	{
-		setFilePath(System.getProperty("user.dir")+prop.getProperty("filePathToExcelForCreation"));
-		setSheetName(prop.getProperty("CreateUserSheetName"));
-		excel = new ExcelReader(getFilePath());
+		
 		softassert = new SoftAssert();
 
 		EmployeeAPI = new EmployeeAPI();
@@ -153,5 +151,30 @@ public class CreateEmployeeAPITests extends BaseTest
 		log.info("Test successfully completed.");
 
 	}
+	
+	@Test(priority = 5, dataProvider = "data")
+	public void TC004__ValidateCreateAPILatency(HashMap<String, String> employeeData) {
+		
+        // Send API request and measure response time
+        long startTime = System.currentTimeMillis();
+        EmployeeRequest request = new EmployeeRequest(employeeData.get("name"), employeeData.get("job"));
+		// Send POST request
+		Response response = EmployeeAPI.createEmployee(request, "createUserEndPoint");
+
+        long endTime = System.currentTimeMillis();
+
+        // Calculate response time in milliseconds
+        long responseTime = endTime - startTime;
+        System.out.println("API Response Time: " + responseTime + " milliseconds");
+
+        // Validate response status code
+        softassert.assertEquals(response.getStatusCode(), 201, "Expected status code 201 but found " + response.getStatusCode());
+
+        softassert.assertTrue(responseTime <= 2000, "Response time exceeds threshold of 2000 milliseconds,actual response is :"+responseTime);
+		softassert.assertAll(); // Assert all soft asserts
+
+        
+    }
+
 
 }

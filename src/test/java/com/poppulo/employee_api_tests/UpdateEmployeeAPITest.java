@@ -15,6 +15,7 @@ import com.poppulo.employee_api_methods.EmployeeAPI;
 import com.poppulo.util.DataUtil;
 import com.poppulo.util.ExcelReader;
 
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -26,6 +27,7 @@ public class UpdateEmployeeAPITest extends BaseTest {
 	EmployeeAPI EmployeeAPI;
 	public   ExcelReader excel;
 	DataUtil  DataUtil;
+	SoftAssert softassert;
 
 	Logger log = LogManager.getLogger(UpdateEmployeeAPITest.class);
 
@@ -39,8 +41,16 @@ public class UpdateEmployeeAPITest extends BaseTest {
 		setFilePath(System.getProperty("user.dir")+prop.getProperty("filePathToExcelForUpdation"));
 		setSheetName(prop.getProperty("UpdateUserSheetName"));
 		excel = new ExcelReader(getFilePath());
-		EmployeeAPI = new EmployeeAPI();
 
+	}
+	
+	@BeforeMethod()
+	public void Initialization() throws IOException 
+	{
+		
+		softassert = new SoftAssert();
+
+		EmployeeAPI = new EmployeeAPI();
 	}
 
 	@DataProvider(name = "updateData")
@@ -56,15 +66,14 @@ public class UpdateEmployeeAPITest extends BaseTest {
 		EmployeeRequest request = new EmployeeRequest(UpdateData.get("name"), UpdateData.get("job"));
 		Response response = EmployeeAPI.updateEmployee("updateUserEndPoint", employeeId, request);
 		response.prettyPrint();
-
-		// Verify response status code
-		Assert.assertEquals(response.getStatusCode(), 200);
+		softassert.assertEquals(response.getStatusCode(), 200);
 
 		// Map response body to EmployeeResponse POJO
 		EmployeeResponse updatedEmployee = response.as(EmployeeResponse.class);
 
-		Assert.assertEquals(updatedEmployee.getName(), UpdateData.get("name"));
-		Assert.assertEquals(updatedEmployee.getJob(), UpdateData.get("job"));
+		softassert.assertEquals(updatedEmployee.getName(), UpdateData.get("name"));
+		softassert.assertEquals(updatedEmployee.getJob(), UpdateData.get("job"));
+		softassert.assertAll();
 	}
 
 	@Test(priority = 2, dataProvider = "updateData")
@@ -92,7 +101,8 @@ public class UpdateEmployeeAPITest extends BaseTest {
 	}
 
 	@Test(priority = 4, enabled = false)
-	public void TCU04_validateEmptyEmployeeDataUpdate(HashMap<String, String> updateData) {
+	public void TCU04_validateEmptyEmployeeDataUpdate(HashMap<String, String> updateData) 
+	{
 		int employeeId = 2;
 		String name = " ";
 		String job = " ";
@@ -100,10 +110,30 @@ public class UpdateEmployeeAPITest extends BaseTest {
 		EmployeeRequest request = new EmployeeRequest(name, job);
 		Response response = EmployeeAPI.updateEmployee(prop.getProperty("updateUserEndPoint"), employeeId, request);
 		response.prettyPrint();
-
-
-		// Verify response status code
 		Assert.assertEquals(response.getStatusCode(), 404, "Able to update valid employee with invalid details");
 	}
+	
+	@Test(priority = 5, dataProvider = "updateData")
+	public void TC005__ValidateUpdateAPILatency(HashMap<String, String> updateData) {
+		
+        
+        int employeeId = 2;
+     // Send API request and measure response time
+        long startTime = System.currentTimeMillis();
+        EmployeeRequest request = new EmployeeRequest(updateData.get("name"), updateData.get("job"));
+		Response response = EmployeeAPI.updateEmployee("updateUserEndPoint", employeeId, request);
+        long endTime = System.currentTimeMillis();
+
+        // Calculate response time in milliseconds
+        long responseTime = endTime - startTime;
+        System.out.println("API Response Time: " + responseTime + " milliseconds");
+
+        // Validate response status code
+        softassert.assertEquals(response.getStatusCode(), 200, "Expected status code 200 but found " + response.getStatusCode());
+        softassert.assertTrue(responseTime <= 2000, "Response time exceeds threshold of 2000 milliseconds,actual response is : "+responseTime);
+		softassert.assertAll(); // Assert all soft asserts
+
+        
+    }
 
 }

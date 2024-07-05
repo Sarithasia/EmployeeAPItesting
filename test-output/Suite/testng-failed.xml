@@ -11,6 +11,7 @@
         <methods>
           <include name="TCD002_ValidatetNonExistentEmployeeDeletion"/>
           <include name="tearDown"/>
+          <include name="Initialization"/>
           <include name="TCD004_ValidateDeleteEmployeeWithEmptyId"/>
           <include name="TCD005_ValidateDeleteEmployeeWithMalformedRequest"/>
           <include name="TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat"/>

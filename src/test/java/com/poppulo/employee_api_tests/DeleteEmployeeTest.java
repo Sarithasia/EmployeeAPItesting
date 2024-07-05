@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -20,13 +21,21 @@ public class DeleteEmployeeTest extends BaseTest {
 
 	Logger log = LogManager.getLogger(DeleteEmployeeTest.class);
 
-	public DeleteEmployeeTest() throws IOException {
+	public DeleteEmployeeTest() throws IOException 
+	{
 		super();
-		EmployeeAPI = new EmployeeAPI();
-		soft = new SoftAssert();
-
+		
 	}
-
+	
+	@BeforeMethod()
+	public void Initialization() throws IOException 
+	{	
+		     				
+		soft = new SoftAssert();
+		EmployeeAPI = new EmployeeAPI();
+	}
+	
+	
 	@Test(priority = 1)
 	public void TCD001_ValidateValidEmployeeDeletion() {
 		int validEmployeeId = 971;
@@ -35,7 +44,7 @@ public class DeleteEmployeeTest extends BaseTest {
 
 		response.prettyPrint();
 
-		Assert.assertEquals(response.getStatusCode(), 204, "Expected status code 404 (Not Found)");
+		Assert.assertEquals(response.getStatusCode(), 204, "Expected status code 204 (Not Found)");
 
 	}
 
@@ -107,5 +116,26 @@ public class DeleteEmployeeTest extends BaseTest {
 		}
 		soft.assertAll();
 	}
+	@Test(priority = 7)
+
+	public void TCD007_ValidateDeletetAPILatency() {
+		
+        // Send API request and measure response time
+        long startTime = System.currentTimeMillis();
+        int EmployeeId =  2; // Replace with a non-existent employee ID
+		Response response = EmployeeAPI.deleteEmployee("deleteUserEndPoint", EmployeeId);
+
+        long endTime = System.currentTimeMillis();
+
+        // Calculate response time in milliseconds
+        long responseTime = endTime - startTime;
+        System.out.println("API Response Time: " + responseTime + " milliseconds");
+
+        // Validate response status code
+        soft.assertEquals(response.getStatusCode(), 204, "Expected status code 204 but found " + response.getStatusCode());
+
+        soft.assertTrue(responseTime <= 2000, "Response time exceeds threshold of 2000 milliseconds,actual response is :"+responseTime);
+        soft.assertAll();
+    }
 
 }
