@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>19/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jul 05 19:12:48 IST 2024</td>
+<td>Started on:</td><td>Sun Jul 14 23:26:46 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>16 seconds (16585 ms)</td>
+<tr><td>Total time:</td><td>19 seconds (19903 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,18 +75,18 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD005_ValidateDeleteEmployeeWithMalformedRequest()'><b>TCD005_ValidateDeleteEmployeeWithMalformedRequest</b><br>Test class: com.poppulo.employee_api_tests.DeleteEmployeeTest</td>
-<td><div><pre>java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with malformed delete request expected [400] but found [204]
-	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD005_ValidateDeleteEmployeeWithMalformedRequest(DeleteEmployeeTest.java:91)
+<td title='com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat()'><b>TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat</b><br>Test class: com.poppulo.employee_api_tests.DeleteEmployeeTest</td>
+<td><div><pre>java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with InvalidIdFormat expected [400] but found [204]
+	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat(DeleteEmployeeTest.java:75)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace812448650", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace812448650'><pre>java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with malformed delete request expected [400] but found [204]
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1889348204", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1889348204'><pre>java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with InvalidIdFormat expected [400] but found [204]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:907)
-	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD005_ValidateDeleteEmployeeWithMalformedRequest(DeleteEmployeeTest.java:91)
+	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat(DeleteEmployeeTest.java:75)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -117,108 +117,20 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@7578e06a</td></tr>
-<tr>
-<td title='com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD002_ValidatetNonExistentEmployeeDeletion()'><b>TCD002_ValidatetNonExistentEmployeeDeletion</b><br>Test class: com.poppulo.employee_api_tests.DeleteEmployeeTest</td>
-<td><div><pre>java.lang.AssertionError: Expected status code 404 (Not Found),Able to delete NonExistent employee expected [404] but found [204]
-	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD002_ValidatetNonExistentEmployeeDeletion(DeleteEmployeeTest.java:57)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2140101943", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2140101943'><pre>java.lang.AssertionError: Expected status code 404 (Not Found),Able to delete NonExistent employee expected [404] but found [204]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:907)
-	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD002_ValidatetNonExistentEmployeeDeletion(DeleteEmployeeTest.java:57)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@7578e06a</td></tr>
+<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@26f96b85</td></tr>
 <tr>
 <td title='com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD004_ValidateDeleteEmployeeWithEmptyId()'><b>TCD004_ValidateDeleteEmployeeWithEmptyId</b><br>Test class: com.poppulo.employee_api_tests.DeleteEmployeeTest</td>
 <td><div><pre>java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with empty id expected [400] but found [204]
-	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD004_ValidateDeleteEmployeeWithEmptyId(DeleteEmployeeTest.java:77)
+	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD004_ValidateDeleteEmployeeWithEmptyId(DeleteEmployeeTest.java:89)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1916559238", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1916559238'><pre>java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with empty id expected [400] but found [204]
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2090144454", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2090144454'><pre>java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with empty id expected [400] but found [204]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:907)
-	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD004_ValidateDeleteEmployeeWithEmptyId(DeleteEmployeeTest.java:77)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>1</td>
-<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@7578e06a</td></tr>
-<tr>
-<td title='com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat()'><b>TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat</b><br>Test class: com.poppulo.employee_api_tests.DeleteEmployeeTest</td>
-<td><div><pre>java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with InvalidIdFormat expected [400] but found [204]
-	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat(DeleteEmployeeTest.java:67)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace22864481", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace22864481'><pre>java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with InvalidIdFormat expected [400] but found [204]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:907)
-	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat(DeleteEmployeeTest.java:67)
+	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD004_ValidateDeleteEmployeeWithEmptyId(DeleteEmployeeTest.java:89)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -249,7 +161,95 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@7578e06a</td></tr>
+<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@26f96b85</td></tr>
+<tr>
+<td title='com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD005_ValidateDeleteEmployeeWithMalformedRequest()'><b>TCD005_ValidateDeleteEmployeeWithMalformedRequest</b><br>Test class: com.poppulo.employee_api_tests.DeleteEmployeeTest</td>
+<td><div><pre>java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with malformed delete request expected [400] but found [204]
+	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD005_ValidateDeleteEmployeeWithMalformedRequest(DeleteEmployeeTest.java:107)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1798485624", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1798485624'><pre>java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with malformed delete request expected [400] but found [204]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD005_ValidateDeleteEmployeeWithMalformedRequest(DeleteEmployeeTest.java:107)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@26f96b85</td></tr>
+<tr>
+<td title='com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD002_ValidatetNonExistentEmployeeDeletion()'><b>TCD002_ValidatetNonExistentEmployeeDeletion</b><br>Test class: com.poppulo.employee_api_tests.DeleteEmployeeTest</td>
+<td><div><pre>java.lang.AssertionError: Expected status code 404 (Not Found),Able to delete NonExistent employee expected [404] but found [204]
+	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD002_ValidatetNonExistentEmployeeDeletion(DeleteEmployeeTest.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace531828317", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace531828317'><pre>java.lang.AssertionError: Expected status code 404 (Not Found),Able to delete NonExistent employee expected [404] but found [204]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD002_ValidatetNonExistentEmployeeDeletion(DeleteEmployeeTest.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@26f96b85</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -259,100 +259,100 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.poppulo.employee_api_tests.UpdateEmployeeAPITest.TCU03_validateDataUpdationOfValidEmployeeWithInvalidData()'><b>TCU03_validateDataUpdationOfValidEmployeeWithInvalidData</b><br>Test class: com.poppulo.employee_api_tests.UpdateEmployeeAPITest<br>Parameters: {name=$%^, job=*&^}</td>
-<td></td>
-<td>0</td>
-<td>com.poppulo.employee_api_tests.UpdateEmployeeAPITest@6b63d445</td></tr>
-<tr>
-<td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.TC004_ValidateUniqueEmployeeIds()'><b>TC004_ValidateUniqueEmployeeIds</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests</td>
-<td></td>
-<td>0</td>
-<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@6dd93a21</td></tr>
-<tr>
-<td title='com.poppulo.employee_api_tests.GetEmployeeAPITest.TCG01_ValidateGetRequestForValidUser()'><b>TCG01_ValidateGetRequestForValidUser</b><br>Test class: com.poppulo.employee_api_tests.GetEmployeeAPITest<br>Parameters: {last_name=Weaver, id=2.0, avatar=https://reqres.in/img/faces/2-image.jpg, text=To keep ReqRes free, contributions towards server costs are appreciated!, first_name=Janet, email=janet.weaver@reqres.in, url=https://reqres.in/#support-heading}</td>
-<td></td>
-<td>0</td>
-<td>com.poppulo.employee_api_tests.GetEmployeeAPITest@7923f5b3</td></tr>
-<tr>
-<td title='com.poppulo.employee_api_tests.GetEmployeeAPITest.TCG03_ValidateGetAPILatency()'><b>TCG03_ValidateGetAPILatency</b><br>Test class: com.poppulo.employee_api_tests.GetEmployeeAPITest</td>
-<td></td>
-<td>0</td>
-<td>com.poppulo.employee_api_tests.GetEmployeeAPITest@7923f5b3</td></tr>
-<tr>
-<td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.TC002_ValidateCustomerApiWithInValidData()'><b>TC002_ValidateCustomerApiWithInValidData</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests<br>Parameters: {name="$%%^, job=qa}</td>
-<td></td>
-<td>0</td>
-<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@6dd93a21</td></tr>
-<tr>
 <td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee()'><b>TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests<br>Parameters: {name=Dhoni, job=PM}</td>
 <td></td>
 <td>0</td>
-<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@6dd93a21</td></tr>
-<tr>
-<td title='com.poppulo.employee_api_tests.UpdateEmployeeAPITest.TC005__ValidateUpdateAPILatency()'><b>TC005__ValidateUpdateAPILatency</b><br>Test class: com.poppulo.employee_api_tests.UpdateEmployeeAPITest<br>Parameters: {name=morpheus, job=zion resident}</td>
-<td></td>
-<td>0</td>
-<td>com.poppulo.employee_api_tests.UpdateEmployeeAPITest@6b63d445</td></tr>
-<tr>
-<td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.TC002_ValidateCustomerApiWithInValidData()'><b>TC002_ValidateCustomerApiWithInValidData</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests<br>Parameters: {name=Rohit, job=%$%^&}</td>
-<td></td>
-<td>0</td>
-<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@6dd93a21</td></tr>
-<tr>
-<td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.TC001_ValidateCustomerApiWithValidData()'><b>TC001_ValidateCustomerApiWithValidData</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests<br>Parameters: {name=kia  MALHOTRA J, job=dev}</td>
-<td></td>
-<td>0</td>
-<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@6dd93a21</td></tr>
+<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@25a73de1</td></tr>
 <tr>
 <td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.TC002_ValidateCustomerApiWithInValidData()'><b>TC002_ValidateCustomerApiWithInValidData</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests<br>Parameters: {name=Hiya, job=}</td>
 <td></td>
 <td>0</td>
-<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@6dd93a21</td></tr>
+<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@25a73de1</td></tr>
 <tr>
-<td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.TC004__ValidateCreateAPILatency()'><b>TC004__ValidateCreateAPILatency</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests<br>Parameters: {name=Popy, job=PM}</td>
+<td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.TC002_ValidateCustomerApiWithInValidData()'><b>TC002_ValidateCustomerApiWithInValidData</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests<br>Parameters: {name=Rohit, job=%$%^&}</td>
 <td></td>
 <td>0</td>
-<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@6dd93a21</td></tr>
-<tr>
-<td title='com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD006_ValidateSimultaneousDeleteOperations()'><b>TCD006_ValidateSimultaneousDeleteOperations</b><br>Test class: com.poppulo.employee_api_tests.DeleteEmployeeTest</td>
-<td></td>
-<td>2</td>
-<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@7578e06a</td></tr>
-<tr>
-<td title='com.poppulo.employee_api_tests.GetEmployeeAPITest.TCG02_ValidateGetRequestForNonExistentUser()'><b>TCG02_ValidateGetRequestForNonExistentUser</b><br>Test class: com.poppulo.employee_api_tests.GetEmployeeAPITest</td>
-<td></td>
-<td>0</td>
-<td>com.poppulo.employee_api_tests.GetEmployeeAPITest@7923f5b3</td></tr>
-<tr>
-<td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee()'><b>TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests<br>Parameters: {name=Dhoni, job=PM}</td>
-<td></td>
-<td>0</td>
-<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@6dd93a21</td></tr>
-<tr>
-<td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.TC001_ValidateCustomerApiWithValidData()'><b>TC001_ValidateCustomerApiWithValidData</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests<br>Parameters: {name=sia, job=qa}</td>
-<td></td>
-<td>2</td>
-<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@6dd93a21</td></tr>
+<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@25a73de1</td></tr>
 <tr>
 <td title='com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD001_ValidateValidEmployeeDeletion()'><b>TCD001_ValidateValidEmployeeDeletion</b><br>Test class: com.poppulo.employee_api_tests.DeleteEmployeeTest</td>
 <td></td>
 <td>0</td>
-<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@7578e06a</td></tr>
+<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@26f96b85</td></tr>
+<tr>
+<td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee()'><b>TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests<br>Parameters: {name=Dhoni, job=PM}</td>
+<td></td>
+<td>0</td>
+<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@25a73de1</td></tr>
 <tr>
 <td title='com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD007_ValidateDeletetAPILatency()'><b>TCD007_ValidateDeletetAPILatency</b><br>Test class: com.poppulo.employee_api_tests.DeleteEmployeeTest</td>
 <td></td>
 <td>0</td>
-<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@7578e06a</td></tr>
+<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@26f96b85</td></tr>
 <tr>
 <td title='com.poppulo.employee_api_tests.UpdateEmployeeAPITest.TCU02_validateUpdationWithInvalidEmployeeId()'><b>TCU02_validateUpdationWithInvalidEmployeeId</b><br>Test class: com.poppulo.employee_api_tests.UpdateEmployeeAPITest<br>Parameters: {name=Manju, job=Dev}</td>
 <td></td>
 <td>0</td>
-<td>com.poppulo.employee_api_tests.UpdateEmployeeAPITest@6b63d445</td></tr>
+<td>com.poppulo.employee_api_tests.UpdateEmployeeAPITest@58399d82</td></tr>
+<tr>
+<td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.TC001_ValidateCustomerApiWithValidData()'><b>TC001_ValidateCustomerApiWithValidData</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests<br>Parameters: {name=kia  MALHOTRA J, job=dev}</td>
+<td></td>
+<td>1</td>
+<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@25a73de1</td></tr>
+<tr>
+<td title='com.poppulo.employee_api_tests.GetEmployeeAPITest.TCG01_ValidateGetRequestForValidUser()'><b>TCG01_ValidateGetRequestForValidUser</b><br>Test class: com.poppulo.employee_api_tests.GetEmployeeAPITest<br>Parameters: {last_name=Weaver, id=2.0, avatar=https://reqres.in/img/faces/2-image.jpg, text=To keep ReqRes free, contributions towards server costs are appreciated!, first_name=Janet, email=janet.weaver@reqres.in, url=https://reqres.in/#support-heading}</td>
+<td></td>
+<td>0</td>
+<td>com.poppulo.employee_api_tests.GetEmployeeAPITest@298d9a05</td></tr>
+<tr>
+<td title='com.poppulo.employee_api_tests.UpdateEmployeeAPITest.TCU03_validateDataUpdationOfValidEmployeeWithInvalidData()'><b>TCU03_validateDataUpdationOfValidEmployeeWithInvalidData</b><br>Test class: com.poppulo.employee_api_tests.UpdateEmployeeAPITest<br>Parameters: {name=$%^, job=*&^}</td>
+<td></td>
+<td>0</td>
+<td>com.poppulo.employee_api_tests.UpdateEmployeeAPITest@58399d82</td></tr>
+<tr>
+<td title='com.poppulo.employee_api_tests.GetEmployeeAPITest.TCG02_ValidateGetRequestForNonExistentUser()'><b>TCG02_ValidateGetRequestForNonExistentUser</b><br>Test class: com.poppulo.employee_api_tests.GetEmployeeAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.poppulo.employee_api_tests.GetEmployeeAPITest@298d9a05</td></tr>
+<tr>
+<td title='com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD006_ValidateSimultaneousDeleteOperations()'><b>TCD006_ValidateSimultaneousDeleteOperations</b><br>Test class: com.poppulo.employee_api_tests.DeleteEmployeeTest</td>
+<td></td>
+<td>2</td>
+<td>com.poppulo.employee_api_tests.DeleteEmployeeTest@26f96b85</td></tr>
+<tr>
+<td title='com.poppulo.employee_api_tests.GetEmployeeAPITest.TCG03_ValidateGetAPILatency()'><b>TCG03_ValidateGetAPILatency</b><br>Test class: com.poppulo.employee_api_tests.GetEmployeeAPITest</td>
+<td></td>
+<td>0</td>
+<td>com.poppulo.employee_api_tests.GetEmployeeAPITest@298d9a05</td></tr>
 <tr>
 <td title='com.poppulo.employee_api_tests.UpdateEmployeeAPITest.TCUO1_validateValidEmployeeUpdate()'><b>TCUO1_validateValidEmployeeUpdate</b><br>Test class: com.poppulo.employee_api_tests.UpdateEmployeeAPITest<br>Parameters: {name=morpheus, job=zion resident}</td>
 <td></td>
 <td>0</td>
-<td>com.poppulo.employee_api_tests.UpdateEmployeeAPITest@6b63d445</td></tr>
+<td>com.poppulo.employee_api_tests.UpdateEmployeeAPITest@58399d82</td></tr>
+<tr>
+<td title='com.poppulo.employee_api_tests.UpdateEmployeeAPITest.TC005__ValidateUpdateAPILatency()'><b>TC005__ValidateUpdateAPILatency</b><br>Test class: com.poppulo.employee_api_tests.UpdateEmployeeAPITest<br>Parameters: {name=morpheus, job=zion resident}</td>
+<td></td>
+<td>0</td>
+<td>com.poppulo.employee_api_tests.UpdateEmployeeAPITest@58399d82</td></tr>
+<tr>
+<td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.TC001_ValidateCustomerApiWithValidData()'><b>TC001_ValidateCustomerApiWithValidData</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests<br>Parameters: {name=sia, job=qa}</td>
+<td></td>
+<td>3</td>
+<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@25a73de1</td></tr>
+<tr>
+<td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.TC004_ValidateUniqueEmployeeIds()'><b>TC004_ValidateUniqueEmployeeIds</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests</td>
+<td></td>
+<td>0</td>
+<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@25a73de1</td></tr>
+<tr>
+<td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.TC004__ValidateCreateAPILatency()'><b>TC004__ValidateCreateAPILatency</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests<br>Parameters: {name=Popy, job=PM}</td>
+<td></td>
+<td>0</td>
+<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@25a73de1</td></tr>
+<tr>
+<td title='com.poppulo.employee_api_tests.CreateEmployeeAPITests.TC002_ValidateCustomerApiWithInValidData()'><b>TC002_ValidateCustomerApiWithInValidData</b><br>Test class: com.poppulo.employee_api_tests.CreateEmployeeAPITests<br>Parameters: {name="$%%^, job=qa}</td>
+<td></td>
+<td>0</td>
+<td>com.poppulo.employee_api_tests.CreateEmployeeAPITests@25a73de1</td></tr>
 </table><p>
 </body>
 </html>

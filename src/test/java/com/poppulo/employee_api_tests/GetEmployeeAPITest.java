@@ -29,12 +29,13 @@ public class GetEmployeeAPITest extends BaseTest
 	private  ExcelReader excel;
 	EmployeeAPI EmployeeAPI;
 	DataUtil DataUtil;
-	Logger log = LogManager.getLogger(GetEmployeeAPITest.class);
+	Logger log ;
 	SoftAssert	softAssert;
 	
 	public GetEmployeeAPITest() throws IOException
 	{
 		super();
+		 log = LogManager.getLogger(GetEmployeeAPITest.class);
 		setFilePath(System.getProperty("user.dir")+prop.getProperty("filePathToExcelForGet"));
 		setSheetName(prop.getProperty("GetUserSheetName"));
 		excel = new ExcelReader(getFilePath());
@@ -122,7 +123,8 @@ public class GetEmployeeAPITest extends BaseTest
         // Send API request and measure response time
         long startTime = System.currentTimeMillis();
 		Response response = EmployeeAPI.getEmployee(2, "getUserEndPoint");
-
+		log.debug("Response status code: {}", response.getStatusCode());
+		log.debug("Response body: {}", response.getBody().asString());
         long endTime = System.currentTimeMillis();
 
         // Calculate response time in milliseconds

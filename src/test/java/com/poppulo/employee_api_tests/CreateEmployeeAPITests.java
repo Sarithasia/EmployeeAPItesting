@@ -35,8 +35,7 @@ import java.util.Map;
 
 public class CreateEmployeeAPITests extends BaseTest 
 {
-	Logger log = LogManager.getLogger(CreateEmployeeAPITests.class);
-
+	Logger log ;
 	int EMPLOYEE_COUNT_IN_EXCEL;
 	EmployeeAPI EmployeeAPI;
 	
@@ -48,6 +47,7 @@ public class CreateEmployeeAPITests extends BaseTest
 	public CreateEmployeeAPITests() throws IOException 
 	{
 		super();
+		 log = LogManager.getLogger(CreateEmployeeAPITests.class);
 		DataUtil =new DataUtil();		
 		setFilePath(System.getProperty("user.dir")+prop.getProperty("filePathToExcelForCreation"));
 		setSheetName(prop.getProperty("CreateUserSheetName"));

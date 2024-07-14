@@ -143,7 +143,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.poppulo.employee_api_tests.CreateEmployeeAPITests" class="method navigator-link" hash-for-method="TC002_ValidateCustomerApiWithInValidData({name=&quot;$%%^, job=qa})">TC002_ValidateCustomerApiWithInValidData({name="$%%^, job=qa})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.poppulo.employee_api_tests.CreateEmployeeAPITests" class="method navigator-link" hash-for-method="TC002_ValidateCustomerApiWithInValidData({name=Hiya, job=})">TC002_ValidateCustomerApiWithInValidData({name=Hiya, job=})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -153,7 +153,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.poppulo.employee_api_tests.CreateEmployeeAPITests" class="method navigator-link" hash-for-method="TC002_ValidateCustomerApiWithInValidData({name=Hiya, job=})">TC002_ValidateCustomerApiWithInValidData({name=Hiya, job=})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.poppulo.employee_api_tests.CreateEmployeeAPITests" class="method navigator-link" hash-for-method="TC002_ValidateCustomerApiWithInValidData({name=&quot;$%%^, job=qa})">TC002_ValidateCustomerApiWithInValidData({name="$%%^, job=qa})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -250,7 +250,7 @@
                   </a> <!-- TCD002_ValidatetNonExistentEmployeeDeletion -->
                   <span class="method-name">TCD002_ValidatetNonExistentEmployeeDeletion</span>
                   <div class="stack-trace">java.lang.AssertionError: Expected status code 404 (Not Found),Able to delete NonExistent employee expected [404] but found [204]
-	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD002_ValidatetNonExistentEmployeeDeletion(DeleteEmployeeTest.java:57)
+	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD002_ValidatetNonExistentEmployeeDeletion(DeleteEmployeeTest.java:62)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -262,7 +262,7 @@
                   </a> <!-- TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat -->
                   <span class="method-name">TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat</span>
                   <div class="stack-trace">java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with InvalidIdFormat expected [400] but found [204]
-	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat(DeleteEmployeeTest.java:67)
+	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat(DeleteEmployeeTest.java:75)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -274,7 +274,7 @@
                   </a> <!-- TCD004_ValidateDeleteEmployeeWithEmptyId -->
                   <span class="method-name">TCD004_ValidateDeleteEmployeeWithEmptyId</span>
                   <div class="stack-trace">java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with empty id expected [400] but found [204]
-	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD004_ValidateDeleteEmployeeWithEmptyId(DeleteEmployeeTest.java:77)
+	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD004_ValidateDeleteEmployeeWithEmptyId(DeleteEmployeeTest.java:89)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -286,7 +286,7 @@
                   </a> <!-- TCD005_ValidateDeleteEmployeeWithMalformedRequest -->
                   <span class="method-name">TCD005_ValidateDeleteEmployeeWithMalformedRequest</span>
                   <div class="stack-trace">java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with malformed delete request expected [400] but found [204]
-	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD005_ValidateDeleteEmployeeWithMalformedRequest(DeleteEmployeeTest.java:91)
+	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD005_ValidateDeleteEmployeeWithMalformedRequest(DeleteEmployeeTest.java:107)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -294,65 +294,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.poppulo.employee_api_tests.GetEmployeeAPITest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TCG01_ValidateGetRequestForValidUser({last_name=Weaver, id=2.0, avatar=https://reqres.in/img/faces/2-image.jpg, text=To keep ReqRes free,...)">
-                  </a> <!-- TCG01_ValidateGetRequestForValidUser({last_name=Weaver, id=2.0, avatar=https://reqres.in/img/faces/2-image.jpg, text=To keep ReqRes free,...) -->
-                  <span class="method-name">TCG01_ValidateGetRequestForValidUser</span>
-                  <span class="parameters">({last_name=Weaver, id=2.0, avatar=https://reqres.in/img/faces/2-image.jpg, text=To keep ReqRes free, contributions towards server costs are appreciated!, first_name=Janet, email=janet.weaver@reqres.in, url=https://reqres.in/#support-heading})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TCG02_ValidateGetRequestForNonExistentUser">
-                  </a> <!-- TCG02_ValidateGetRequestForNonExistentUser -->
-                  <span class="method-name">TCG02_ValidateGetRequestForNonExistentUser</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TCG03_ValidateGetAPILatency">
-                  </a> <!-- TCG03_ValidateGetAPILatency -->
-                  <span class="method-name">TCG03_ValidateGetAPILatency</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.poppulo.employee_api_tests.DeleteEmployeeTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TCD001_ValidateValidEmployeeDeletion">
-                  </a> <!-- TCD001_ValidateValidEmployeeDeletion -->
-                  <span class="method-name">TCD001_ValidateValidEmployeeDeletion</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TCD006_ValidateSimultaneousDeleteOperations">
-                  </a> <!-- TCD006_ValidateSimultaneousDeleteOperations -->
-                  <span class="method-name">TCD006_ValidateSimultaneousDeleteOperations</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TCD007_ValidateDeletetAPILatency">
-                  </a> <!-- TCD007_ValidateDeletetAPILatency -->
-                  <span class="method-name">TCD007_ValidateDeletetAPILatency</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -377,10 +318,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TC002_ValidateCustomerApiWithInValidData({name=&quot;$%%^, job=qa})">
-                  </a> <!-- TC002_ValidateCustomerApiWithInValidData({name="$%%^, job=qa}) -->
+                  <a name="TC002_ValidateCustomerApiWithInValidData({name=Hiya, job=})">
+                  </a> <!-- TC002_ValidateCustomerApiWithInValidData({name=Hiya, job=}) -->
                   <span class="method-name">TC002_ValidateCustomerApiWithInValidData</span>
-                  <span class="parameters">({name="$%%^, job=qa})</span>
+                  <span class="parameters">({name=Hiya, job=})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -393,10 +334,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TC002_ValidateCustomerApiWithInValidData({name=Hiya, job=})">
-                  </a> <!-- TC002_ValidateCustomerApiWithInValidData({name=Hiya, job=}) -->
+                  <a name="TC002_ValidateCustomerApiWithInValidData({name=&quot;$%%^, job=qa})">
+                  </a> <!-- TC002_ValidateCustomerApiWithInValidData({name="$%%^, job=qa}) -->
                   <span class="method-name">TC002_ValidateCustomerApiWithInValidData</span>
-                  <span class="parameters">({name=Hiya, job=})</span>
+                  <span class="parameters">({name="$%%^, job=qa})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -428,6 +369,36 @@
                   </a> <!-- TC004__ValidateCreateAPILatency({name=Popy, job=PM}) -->
                   <span class="method-name">TC004__ValidateCreateAPILatency</span>
                   <span class="parameters">({name=Popy, job=PM})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.poppulo.employee_api_tests.GetEmployeeAPITest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCG01_ValidateGetRequestForValidUser({last_name=Weaver, id=2.0, avatar=https://reqres.in/img/faces/2-image.jpg, text=To keep ReqRes free,...)">
+                  </a> <!-- TCG01_ValidateGetRequestForValidUser({last_name=Weaver, id=2.0, avatar=https://reqres.in/img/faces/2-image.jpg, text=To keep ReqRes free,...) -->
+                  <span class="method-name">TCG01_ValidateGetRequestForValidUser</span>
+                  <span class="parameters">({last_name=Weaver, id=2.0, avatar=https://reqres.in/img/faces/2-image.jpg, text=To keep ReqRes free, contributions towards server costs are appreciated!, first_name=Janet, email=janet.weaver@reqres.in, url=https://reqres.in/#support-heading})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCG02_ValidateGetRequestForNonExistentUser">
+                  </a> <!-- TCG02_ValidateGetRequestForNonExistentUser -->
+                  <span class="method-name">TCG02_ValidateGetRequestForNonExistentUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCG03_ValidateGetAPILatency">
+                  </a> <!-- TCG03_ValidateGetAPILatency -->
+                  <span class="method-name">TCG03_ValidateGetAPILatency</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -468,6 +439,35 @@
                   </a> <!-- TCUO1_validateValidEmployeeUpdate({name=morpheus, job=zion resident}) -->
                   <span class="method-name">TCUO1_validateValidEmployeeUpdate</span>
                   <span class="parameters">({name=morpheus, job=zion resident})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.poppulo.employee_api_tests.DeleteEmployeeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCD001_ValidateValidEmployeeDeletion">
+                  </a> <!-- TCD001_ValidateValidEmployeeDeletion -->
+                  <span class="method-name">TCD001_ValidateValidEmployeeDeletion</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCD006_ValidateSimultaneousDeleteOperations">
+                  </a> <!-- TCD006_ValidateSimultaneousDeleteOperations -->
+                  <span class="method-name">TCD006_ValidateSimultaneousDeleteOperations</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCD007_ValidateDeletetAPILatency">
+                  </a> <!-- TCD007_ValidateDeletetAPILatency -->
+                  <span class="method-name">TCD007_ValidateDeletetAPILatency</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -535,91 +535,91 @@ data.addRows(23);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC001_ValidateCustomerApiWithValidData')
 data.setCell(0, 2, 'com.poppulo.employee_api_tests.CreateEmployeeAPITests')
-data.setCell(0, 3, 2791);
+data.setCell(0, 3, 3566);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'TCD006_ValidateSimultaneousDeleteOperations')
 data.setCell(1, 2, 'com.poppulo.employee_api_tests.DeleteEmployeeTest')
-data.setCell(1, 3, 2178);
+data.setCell(1, 3, 2345);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TCD004_ValidateDeleteEmployeeWithEmptyId')
-data.setCell(2, 2, 'com.poppulo.employee_api_tests.DeleteEmployeeTest')
-data.setCell(2, 3, 1329);
+data.setCell(2, 1, 'TC001_ValidateCustomerApiWithValidData')
+data.setCell(2, 2, 'com.poppulo.employee_api_tests.CreateEmployeeAPITests')
+data.setCell(2, 3, 1014);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TCD002_ValidatetNonExistentEmployeeDeletion')
+data.setCell(3, 1, 'TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat')
 data.setCell(3, 2, 'com.poppulo.employee_api_tests.DeleteEmployeeTest')
-data.setCell(3, 3, 715);
+data.setCell(3, 3, 893);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC004__ValidateCreateAPILatency')
+data.setCell(4, 1, 'TC002_ValidateCustomerApiWithInValidData')
 data.setCell(4, 2, 'com.poppulo.employee_api_tests.CreateEmployeeAPITests')
-data.setCell(4, 3, 701);
+data.setCell(4, 3, 814);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat')
-data.setCell(5, 2, 'com.poppulo.employee_api_tests.DeleteEmployeeTest')
-data.setCell(5, 3, 696);
+data.setCell(5, 1, 'TCG02_ValidateGetRequestForNonExistentUser')
+data.setCell(5, 2, 'com.poppulo.employee_api_tests.GetEmployeeAPITest')
+data.setCell(5, 3, 806);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'TCU02_validateUpdationWithInvalidEmployeeId')
 data.setCell(6, 2, 'com.poppulo.employee_api_tests.UpdateEmployeeAPITest')
-data.setCell(6, 3, 683);
+data.setCell(6, 3, 769);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee')
 data.setCell(7, 2, 'com.poppulo.employee_api_tests.CreateEmployeeAPITests')
-data.setCell(7, 3, 522);
+data.setCell(7, 3, 720);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'TC001_ValidateCustomerApiWithValidData')
-data.setCell(8, 2, 'com.poppulo.employee_api_tests.CreateEmployeeAPITests')
-data.setCell(8, 3, 516);
+data.setCell(8, 1, 'TCD007_ValidateDeletetAPILatency')
+data.setCell(8, 2, 'com.poppulo.employee_api_tests.DeleteEmployeeTest')
+data.setCell(8, 3, 714);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'TC002_ValidateCustomerApiWithInValidData')
+data.setCell(9, 1, 'TC004__ValidateCreateAPILatency')
 data.setCell(9, 2, 'com.poppulo.employee_api_tests.CreateEmployeeAPITests')
-data.setCell(9, 3, 512);
+data.setCell(9, 3, 688);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'TC005__ValidateUpdateAPILatency')
-data.setCell(10, 2, 'com.poppulo.employee_api_tests.UpdateEmployeeAPITest')
-data.setCell(10, 3, 507);
+data.setCell(10, 1, 'TC002_ValidateCustomerApiWithInValidData')
+data.setCell(10, 2, 'com.poppulo.employee_api_tests.CreateEmployeeAPITests')
+data.setCell(10, 3, 681);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'TCD005_ValidateDeleteEmployeeWithMalformedRequest')
+data.setCell(11, 1, 'TCD004_ValidateDeleteEmployeeWithEmptyId')
 data.setCell(11, 2, 'com.poppulo.employee_api_tests.DeleteEmployeeTest')
-data.setCell(11, 3, 505);
+data.setCell(11, 3, 662);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'TC002_ValidateCustomerApiWithInValidData')
-data.setCell(12, 2, 'com.poppulo.employee_api_tests.CreateEmployeeAPITests')
-data.setCell(12, 3, 494);
+data.setCell(12, 1, 'TCU03_validateDataUpdationOfValidEmployeeWithInvalidData')
+data.setCell(12, 2, 'com.poppulo.employee_api_tests.UpdateEmployeeAPITest')
+data.setCell(12, 3, 589);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'TCU03_validateDataUpdationOfValidEmployeeWithInvalidData')
+data.setCell(13, 1, 'TCUO1_validateValidEmployeeUpdate')
 data.setCell(13, 2, 'com.poppulo.employee_api_tests.UpdateEmployeeAPITest')
-data.setCell(13, 3, 482);
+data.setCell(13, 3, 566);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee')
-data.setCell(14, 2, 'com.poppulo.employee_api_tests.CreateEmployeeAPITests')
-data.setCell(14, 3, 482);
+data.setCell(14, 1, 'TCD002_ValidatetNonExistentEmployeeDeletion')
+data.setCell(14, 2, 'com.poppulo.employee_api_tests.DeleteEmployeeTest')
+data.setCell(14, 3, 563);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'TCD001_ValidateValidEmployeeDeletion')
 data.setCell(15, 2, 'com.poppulo.employee_api_tests.DeleteEmployeeTest')
-data.setCell(15, 3, 478);
+data.setCell(15, 3, 506);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'TC002_ValidateCustomerApiWithInValidData')
+data.setCell(16, 1, 'TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee')
 data.setCell(16, 2, 'com.poppulo.employee_api_tests.CreateEmployeeAPITests')
-data.setCell(16, 3, 473);
+data.setCell(16, 3, 504);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'TCUO1_validateValidEmployeeUpdate')
-data.setCell(17, 2, 'com.poppulo.employee_api_tests.UpdateEmployeeAPITest')
-data.setCell(17, 3, 466);
+data.setCell(17, 1, 'TC002_ValidateCustomerApiWithInValidData')
+data.setCell(17, 2, 'com.poppulo.employee_api_tests.CreateEmployeeAPITests')
+data.setCell(17, 3, 502);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'TCD007_ValidateDeletetAPILatency')
+data.setCell(18, 1, 'TCD005_ValidateDeleteEmployeeWithMalformedRequest')
 data.setCell(18, 2, 'com.poppulo.employee_api_tests.DeleteEmployeeTest')
-data.setCell(18, 3, 424);
+data.setCell(18, 3, 479);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'TCG01_ValidateGetRequestForValidUser')
-data.setCell(19, 2, 'com.poppulo.employee_api_tests.GetEmployeeAPITest')
-data.setCell(19, 3, 197);
+data.setCell(19, 1, 'TC005__ValidateUpdateAPILatency')
+data.setCell(19, 2, 'com.poppulo.employee_api_tests.UpdateEmployeeAPITest')
+data.setCell(19, 3, 471);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'TCG02_ValidateGetRequestForNonExistentUser')
+data.setCell(20, 1, 'TCG03_ValidateGetAPILatency')
 data.setCell(20, 2, 'com.poppulo.employee_api_tests.GetEmployeeAPITest')
-data.setCell(20, 3, 117);
+data.setCell(20, 3, 189);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'TCG03_ValidateGetAPILatency')
+data.setCell(21, 1, 'TCG01_ValidateGetRequestForValidUser')
 data.setCell(21, 2, 'com.poppulo.employee_api_tests.GetEmployeeAPITest')
-data.setCell(21, 3, 116);
+data.setCell(21, 3, 167);
 data.setCell(22, 0, 22)
 data.setCell(22, 1, 'TC004_ValidateUniqueEmployeeIds')
 data.setCell(22, 2, 'com.poppulo.employee_api_tests.CreateEmployeeAPITests')
@@ -628,7 +628,7 @@ window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -647,6 +647,15 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
+              <span class="ignored-class-name">com.poppulo.employee_api_tests.UpdateEmployeeAPITest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">TCU04_validateEmptyEmployeeDataUpdate</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">com.poppulo.employee_api_tests.GetEmployeeAPITest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">tearDown</span>
@@ -657,15 +666,6 @@ return data;
               <span class="ignored-class-name">com.poppulo.employee_api_tests.DeleteEmployeeTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">tearDown</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.poppulo.employee_api_tests.UpdateEmployeeAPITest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-                <span class="ignored-method-name">TCU04_validateEmptyEmployeeDataUpdate</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -684,207 +684,207 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC001_ValidateCustomerApiWithValidData({name=sia, job=qa})</span>
-                <span class="method-start">9 ms</span>
+                <span class="method-start">19 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">Initialization</span>
-                <span class="method-start">2817 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC001_ValidateCustomerApiWithValidData({name=kia  MALHOTRA J, job=dev})</span>
-                <span class="method-start">2818 ms</span>
+                <span class="method-start">3599 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">Initialization</span>
+                <span class="method-start">3599 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Initialization</span>
+                <span class="method-start">4622 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC002_ValidateCustomerApiWithInValidData({name="$%%^, job=qa})</span>
-                <span class="method-start">3340 ms</span>
+                <span class="method-start">4623 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">Initialization</span>
-                <span class="method-start">3340 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">Initialization</span>
-                <span class="method-start">3821 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC002_ValidateCustomerApiWithInValidData({name=Rohit, job=%$%^&})</span>
-                <span class="method-start">3822 ms</span>
+                <span class="method-start">5308 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">Initialization</span>
+                <span class="method-start">5308 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Initialization</span>
+                <span class="method-start">6124 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC002_ValidateCustomerApiWithInValidData({name=Hiya, job=})</span>
-                <span class="method-start">4341 ms</span>
+                <span class="method-start">6124 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Initialization</span>
-                <span class="method-start">4341 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">Initialization</span>
-                <span class="method-start">4844 ms</span>
+                <span class="method-start">6633 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee({name=Dhoni, job=PM})</span>
-                <span class="method-start">4845 ms</span>
+                <span class="method-start">6638 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Initialization</span>
-                <span class="method-start">5371 ms</span>
+                <span class="method-start">7359 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee({name=Dhoni, job=PM})</span>
-                <span class="method-start">5372 ms</span>
+                <span class="method-start">7366 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Initialization</span>
-                <span class="method-start">5859 ms</span>
+                <span class="method-start">7877 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC004_ValidateUniqueEmployeeIds</span>
-                <span class="method-start">5862 ms</span>
+                <span class="method-start">7879 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Initialization</span>
-                <span class="method-start">5867 ms</span>
+                <span class="method-start">7886 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC004__ValidateCreateAPILatency({name=Popy, job=PM})</span>
-                <span class="method-start">5868 ms</span>
+                <span class="method-start">7886 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.poppulo.employee_api_tests.GetEmployeeAPITest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">Initialization</span>
-                <span class="method-start">6620 ms</span>
+                <span class="method-start">8648 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TCG01_ValidateGetRequestForValidUser({last_name=Weaver, id=2.0, avatar=https://reqres.in/img/faces/2-image.jpg, text=To keep ReqRes free,...)</span>
-                <span class="method-start">6620 ms</span>
+                <span class="method-start">8648 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Initialization</span>
-                <span class="method-start">6819 ms</span>
+                <span class="method-start">8822 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TCG02_ValidateGetRequestForNonExistentUser</span>
-                <span class="method-start">6820 ms</span>
+                <span class="method-start">8823 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Initialization</span>
-                <span class="method-start">6942 ms</span>
+                <span class="method-start">9632 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TCG03_ValidateGetAPILatency</span>
-                <span class="method-start">6943 ms</span>
+                <span class="method-start">9636 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.poppulo.employee_api_tests.UpdateEmployeeAPITest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">Initialization</span>
-                <span class="method-start">7090 ms</span>
+                <span class="method-start">9870 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TCUO1_validateValidEmployeeUpdate({name=morpheus, job=zion resident})</span>
-                <span class="method-start">7091 ms</span>
+                <span class="method-start">9871 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Initialization</span>
-                <span class="method-start">7561 ms</span>
+                <span class="method-start">10447 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TCU02_validateUpdationWithInvalidEmployeeId({name=Manju, job=Dev})</span>
-                <span class="method-start">7562 ms</span>
+                <span class="method-start">10448 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">Initialization</span>
+                <span class="method-start">11226 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TCU03_validateDataUpdationOfValidEmployeeWithInvalidData({name=$%^, job=*&^})</span>
-                <span class="method-start">8246 ms</span>
+                <span class="method-start">11227 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Initialization</span>
-                <span class="method-start">8246 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">Initialization</span>
-                <span class="method-start">8731 ms</span>
+                <span class="method-start">11823 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC005__ValidateUpdateAPILatency({name=morpheus, job=zion resident})</span>
-                <span class="method-start">8731 ms</span>
+                <span class="method-start">11824 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.poppulo.employee_api_tests.DeleteEmployeeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">Initialization</span>
-                <span class="method-start">9252 ms</span>
+                <span class="method-start">12300 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TCD001_ValidateValidEmployeeDeletion</span>
-                <span class="method-start">9257 ms</span>
+                <span class="method-start">12301 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Initialization</span>
-                <span class="method-start">9739 ms</span>
+                <span class="method-start">12809 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TCD002_ValidatetNonExistentEmployeeDeletion</span>
-                <span class="method-start">9740 ms</span>
+                <span class="method-start">12810 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Initialization</span>
-                <span class="method-start">10484 ms</span>
+                <span class="method-start">13414 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat</span>
-                <span class="method-start">10484 ms</span>
+                <span class="method-start">13414 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Initialization</span>
-                <span class="method-start">11200 ms</span>
+                <span class="method-start">14359 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TCD004_ValidateDeleteEmployeeWithEmptyId</span>
-                <span class="method-start">11200 ms</span>
+                <span class="method-start">14361 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Initialization</span>
-                <span class="method-start">12534 ms</span>
+                <span class="method-start">15031 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TCD005_ValidateDeleteEmployeeWithMalformedRequest</span>
-                <span class="method-start">12536 ms</span>
+                <span class="method-start">15032 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Initialization</span>
-                <span class="method-start">13074 ms</span>
+                <span class="method-start">15516 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TCD006_ValidateSimultaneousDeleteOperations</span>
-                <span class="method-start">13075 ms</span>
+                <span class="method-start">15517 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">Initialization</span>
-                <span class="method-start">15254 ms</span>
+                <span class="method-start">17868 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TCD007_ValidateDeletetAPILatency</span>
-                <span class="method-start">15255 ms</span>
+                <span class="method-start">17869 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.poppulo.employee_api_tests.CreateEmployeeAPITests</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16258 ms</span>
+                <span class="method-start">19122 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
