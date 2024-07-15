@@ -21,7 +21,9 @@ import org.testng.asserts.SoftAssert;
 
 import com.poppulo.employee.POJO.EmployeeRequest;
 import com.poppulo.employee_api_basetest.BaseTest;
-import com.poppulo.employee_api_methods.EmployeeAPI;
+import com.poppulo.employee_api_methods.RequestHandler;
+import com.poppulo.employee_api_methods.ResponseHandler;
+
 import com.poppulo.util.DataUtil;
 import com.poppulo.util.ExcelReader;
 import com.poppulo.util.ExtentReportListener;
@@ -37,7 +39,8 @@ public class CreateEmployeeAPITests extends BaseTest
 {
 	Logger log ;
 	int EMPLOYEE_COUNT_IN_EXCEL;
-	EmployeeAPI EmployeeAPI;
+	RequestHandler RequestHandler;
+	ResponseHandler ResponseHandler;
 	
 	private   ExcelReader excel;
 	SoftAssert softassert;
@@ -60,8 +63,8 @@ public class CreateEmployeeAPITests extends BaseTest
 	{
 		
 		softassert = new SoftAssert();
-
-		EmployeeAPI = new EmployeeAPI();
+		RequestHandler = new RequestHandler();
+		ResponseHandler =new ResponseHandler();
 	}
 
 	@DataProvider(name = "data")
@@ -76,21 +79,8 @@ public class CreateEmployeeAPITests extends BaseTest
 		log.info("Starting test with data: {}", employeeData);
 
 		EmployeeRequest request = new EmployeeRequest(employeeData.get("name"), employeeData.get("job"));
-		// Send POST request
-		Response response = EmployeeAPI.createEmployee(request, "createUserEndPoint");
-
-		log.debug("Response status code: {}", response.getStatusCode());
-		log.debug("Response body: {}", response.getBody().asString());
-
-		// Print response and status code
-		response.prettyPrint();
-
-		// Validate the response status code
-		String employeeId = response.jsonPath().getString("id");
-		Assert.assertEquals(response.getStatusCode(), 201,
-				"Expected status code 201 but got " + response.getStatusCode());
-		Assert.assertNotNull(employeeId);
-		log.info("Test successfully completed.");
+		Response response = RequestHandler.createEmployee(request, "createUserEndPoint");
+		ResponseHandler.validateNotNullResponseData(response, 201,"id");
 
 	}
 
@@ -98,20 +88,12 @@ public class CreateEmployeeAPITests extends BaseTest
 	@Test(priority = 2, dataProvider = "data")
 	public void TC002_ValidateCustomerApiWithInValidData(HashMap<String, String> employeeData) {
 
-		// Send POST request
 
 		EmployeeRequest request = new EmployeeRequest(employeeData.get("name"), employeeData.get("job"));
 		// Send POST request
-		Response response = EmployeeAPI.createEmployee(request, "createUserEndPoint");
-		log.debug("Response status code: {}", response.getStatusCode());
-		log.debug("Response body: {}", response.getBody().asString());
-		// Print response and status code
-		response.prettyPrint();
+		Response response = RequestHandler.createEmployee(request, "createUserEndPoint");
+		ResponseHandler.handleApiResponseCode(response,400,"Able to create employee with invalid data");
 
-		// Validate the response status code
-		softassert.assertEquals(response.getStatusCode(), 400,
-				"Able to create employee with invalid data,Expected status code 400 but got "
-						+ response.getStatusCode());
 		log.info("Test successfully completed.");
 
 	}
@@ -126,17 +108,9 @@ public class CreateEmployeeAPITests extends BaseTest
 
 		EmployeeRequest request = new EmployeeRequest(employeeData.get("name"), employeeData.get("job"));
 		// Send POST request
-		Response response = EmployeeAPI.createEmployee(request, "createUserEndPoint");
+		Response response = RequestHandler.createEmployee(request, "createUserEndPoint");
 		id.add(response.jsonPath().getInt("id"));
-		log.debug("Response status code: {}", response.getStatusCode());
-		log.debug("Response body: {}", response.getBody().asString());
-		// Print response and status code
-		response.prettyPrint();
-
-		// Validate the response status code
-		softassert.assertEquals(response.getStatusCode(), 400,
-				"Able to create employee with invalid data,Expected status code 400 but got "
-						+ response.getStatusCode());
+		ResponseHandler.handleApiResponseCode(response, 201);
 		log.info("Test successfully completed.");
 
 	}
@@ -158,20 +132,10 @@ public class CreateEmployeeAPITests extends BaseTest
         // Send API request and measure response time
         long startTime = System.currentTimeMillis();
         EmployeeRequest request = new EmployeeRequest(employeeData.get("name"), employeeData.get("job"));
-		// Send POST request
-		Response response = EmployeeAPI.createEmployee(request, "createUserEndPoint");
+		Response response = RequestHandler.createEmployee(request, "createUserEndPoint");
+		ResponseHandler.handleResponseTime(response,startTime, 201, 2000);
+		log.info("Test successfully completed.");
 
-        long endTime = System.currentTimeMillis();
-
-        // Calculate response time in milliseconds
-        long responseTime = endTime - startTime;
-        System.out.println("API Response Time: " + responseTime + " milliseconds");
-
-        // Validate response status code
-        softassert.assertEquals(response.getStatusCode(), 201, "Expected status code 201 but found " + response.getStatusCode());
-
-        softassert.assertTrue(responseTime <= 2000, "Response time exceeds threshold of 2000 milliseconds,actual response is :"+responseTime);
-		softassert.assertAll(); // Assert all soft asserts
 
         
     }

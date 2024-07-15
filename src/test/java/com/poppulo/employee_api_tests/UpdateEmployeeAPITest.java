@@ -11,7 +11,8 @@ import org.testng.Assert;
 import com.poppulo.employee.POJO.EmployeeRequest;
 import com.poppulo.employee.POJO.EmployeeResponse;
 import com.poppulo.employee_api_basetest.BaseTest;
-import com.poppulo.employee_api_methods.EmployeeAPI;
+import com.poppulo.employee_api_methods.RequestHandler;
+import com.poppulo.employee_api_methods.ResponseHandler;
 import com.poppulo.util.DataUtil;
 import com.poppulo.util.ExcelReader;
 
@@ -24,7 +25,9 @@ import io.restassured.response.Response;
 
 public class UpdateEmployeeAPITest extends BaseTest {
 
-	EmployeeAPI EmployeeAPI;
+	RequestHandler RequestHandler;
+	ResponseHandler ResponseHandler;
+
 	public   ExcelReader excel;
 	DataUtil  DataUtil;
 	SoftAssert softassert;
@@ -49,7 +52,9 @@ public class UpdateEmployeeAPITest extends BaseTest {
 		
 		softassert = new SoftAssert();
 
-		EmployeeAPI = new EmployeeAPI();
+		RequestHandler = new RequestHandler();
+		ResponseHandler =new ResponseHandler();
+
 	}
 
 	@DataProvider(name = "updateData")
@@ -63,12 +68,8 @@ public class UpdateEmployeeAPITest extends BaseTest {
 		int employeeId = 2;
 		
 		EmployeeRequest request = new EmployeeRequest(UpdateData.get("name"), UpdateData.get("job"));
-		Response response = EmployeeAPI.updateEmployee("updateUserEndPoint", employeeId, request);
-		response.prettyPrint();
-		log.debug("Response status code: {}", response.getStatusCode());
-		log.debug("Response body: {}", response.getBody().asString());
-		softassert.assertEquals(response.getStatusCode(), 200);
-
+		Response response = RequestHandler.updateEmployee("updateUserEndPoint", employeeId, request);
+		ResponseHandler.handleApiResponseCode(response,200);		
 		// Map response body to EmployeeResponse POJO
 		EmployeeResponse updatedEmployee = response.as(EmployeeResponse.class);
 
@@ -85,11 +86,8 @@ public class UpdateEmployeeAPITest extends BaseTest {
 		int employeeId = -99;
 		
 		EmployeeRequest request = new EmployeeRequest(updateData.get("name"), updateData.get("job"));
-		Response response = EmployeeAPI.updateEmployee(prop.getProperty("updateUserEndPoint"), employeeId, request);
-		response.prettyPrint();
-		log.debug("Response status code: {}", response.getStatusCode());
-		log.debug("Response body: {}", response.getBody().asString());
-		Assert.assertEquals(response.getStatusCode(), 404, "Able to update invalid employeeID details");
+		Response response = RequestHandler.updateEmployee(prop.getProperty("updateUserEndPoint"), employeeId, request);
+		ResponseHandler.handleApiResponseCode(response,404,"Able to update invalid employeeID details");
 		log.info("Test successfully completed.");
 
 	}
@@ -99,13 +97,8 @@ public class UpdateEmployeeAPITest extends BaseTest {
 		int employeeId = 2;
 		
 		EmployeeRequest request = new EmployeeRequest(updateData.get("name"), updateData.get("job"));
-		Response response = EmployeeAPI.updateEmployee(prop.getProperty("updateUserEndPoint"), employeeId, request);
-		response.prettyPrint();
-		log.debug("Response status code: {}", response.getStatusCode());
-		log.debug("Response body: {}", response.getBody().asString());
-
-		// Verify response status code
-		Assert.assertEquals(response.getStatusCode(), 404, "Able to update valid employee with invalid details");
+		Response response = RequestHandler.updateEmployee(prop.getProperty("updateUserEndPoint"), employeeId, request);
+		ResponseHandler.handleApiResponseCode(response,404,"Able to update valid employee with invalid details");
 		log.info("Test successfully completed.");
 
 	}
@@ -118,11 +111,8 @@ public class UpdateEmployeeAPITest extends BaseTest {
 		String job = " ";
 
 		EmployeeRequest request = new EmployeeRequest(name, job);
-		Response response = EmployeeAPI.updateEmployee(prop.getProperty("updateUserEndPoint"), employeeId, request);
-		response.prettyPrint();
-		log.debug("Response status code: {}", response.getStatusCode());
-		log.debug("Response body: {}", response.getBody().asString());
-		Assert.assertEquals(response.getStatusCode(), 404, "Able to update valid employee with invalid details");
+		Response response = RequestHandler.updateEmployee(prop.getProperty("updateUserEndPoint"), employeeId, request);
+		ResponseHandler.handleApiResponseCode(response,404,"Able to update valid employee with invalid details");
 		log.info("Test successfully completed.");
 
 	}
@@ -135,18 +125,8 @@ public class UpdateEmployeeAPITest extends BaseTest {
      // Send API request and measure response time
         long startTime = System.currentTimeMillis();
         EmployeeRequest request = new EmployeeRequest(updateData.get("name"), updateData.get("job"));
-		Response response = EmployeeAPI.updateEmployee("updateUserEndPoint", employeeId, request);
-        long endTime = System.currentTimeMillis();
-		log.debug("Response status code: {}", response.getStatusCode());
-		log.debug("Response body: {}", response.getBody().asString());
-        // Calculate response time in milliseconds
-        long responseTime = endTime - startTime;
-        System.out.println("API Response Time: " + responseTime + " milliseconds");
-
-        // Validate response status code
-        softassert.assertEquals(response.getStatusCode(), 200, "Expected status code 200 but found " + response.getStatusCode());
-        softassert.assertTrue(responseTime <= 2000, "Response time exceeds threshold of 2000 milliseconds,actual response is : "+responseTime);
-		softassert.assertAll(); // Assert all soft asserts
+		Response response = RequestHandler.updateEmployee("updateUserEndPoint", employeeId, request);
+		ResponseHandler.handleResponseTime(response,startTime, 200, 2000);
 		log.info("Test successfully completed.");
 
         

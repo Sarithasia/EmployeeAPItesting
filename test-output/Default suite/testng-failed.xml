@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.poppulo.employee_api_tests.GetEmployeeAPITest">
+      <class name="com.poppulo.employee_api_tests.DeleteEmployeeTest">
         <methods>
           <include name="tearDown"/>
           <include name="Initialization"/>
-          <include name="TCG02_ValidateGetRequestForNonExistentUser"/>
+          <include name="TCD005_ValidateDeleteEmployeeWithMalformedRequest"/>
         </methods>
-      </class> <!-- com.poppulo.employee_api_tests.GetEmployeeAPITest -->
+      </class> <!-- com.poppulo.employee_api_tests.DeleteEmployeeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

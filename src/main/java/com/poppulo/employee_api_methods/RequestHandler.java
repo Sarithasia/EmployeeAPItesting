@@ -14,8 +14,9 @@ import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-public class EmployeeAPI extends BaseTest {
-	public EmployeeAPI() throws IOException {
+public class RequestHandler extends BaseTest {
+	
+	public RequestHandler() throws IOException {
 		super();
 	}
 

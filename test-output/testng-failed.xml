@@ -7,14 +7,18 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.poppulo.employee_api_tests.CreateEmployeeAPITests">
+        <methods>
+          <include name="Initialization"/>
+          <include name="tearDown"/>
+          <include name="TC002_ValidateCustomerApiWithInValidData" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- com.poppulo.employee_api_tests.CreateEmployeeAPITests -->
       <class name="com.poppulo.employee_api_tests.DeleteEmployeeTest">
         <methods>
-          <include name="TCD002_ValidatetNonExistentEmployeeDeletion"/>
           <include name="tearDown"/>
           <include name="Initialization"/>
-          <include name="TCD004_ValidateDeleteEmployeeWithEmptyId"/>
           <include name="TCD005_ValidateDeleteEmployeeWithMalformedRequest"/>
-          <include name="TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat"/>
         </methods>
       </class> <!-- com.poppulo.employee_api_tests.DeleteEmployeeTest -->
     </classes>

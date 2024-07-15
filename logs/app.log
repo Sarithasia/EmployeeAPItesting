@@ -1,80 +1,182 @@
-2024-07-14 23:26:46 INFO  ExtentReportListener:23 - onstart started
-2024-07-14 23:26:47 INFO  ExtentReportListener:31 - onstart completed
-2024-07-14 23:26:47 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-07-14 23:26:47 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-2024-07-14 23:26:47 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-07-14 23:26:47 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-07-14 23:26:48 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC001_ValidateCustomerApiWithValidData
-2024-07-14 23:26:48 INFO  CreateEmployeeAPITests:76 - Starting test with data: {name=sia, job=qa}
-2024-07-14 23:26:51 DEBUG CreateEmployeeAPITests:82 - Response status code: 201
-2024-07-14 23:26:51 DEBUG CreateEmployeeAPITests:83 - Response body: {"name":"sia","job":"qa","id":"203","createdAt":"2024-07-14T17:56:51.726Z"}
-2024-07-14 23:26:51 INFO  CreateEmployeeAPITests:93 - Test successfully completed.
-2024-07-14 23:26:51 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TC001_ValidateCustomerApiWithValidData
-2024-07-14 23:26:51 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC001_ValidateCustomerApiWithValidData
-2024-07-14 23:26:51 INFO  CreateEmployeeAPITests:76 - Starting test with data: {name=kia  MALHOTRA J, job=dev}
-2024-07-14 23:26:52 DEBUG CreateEmployeeAPITests:82 - Response status code: 201
-2024-07-14 23:26:52 DEBUG CreateEmployeeAPITests:83 - Response body: {"name":"kia  MALHOTRA J","job":"dev","id":"658","createdAt":"2024-07-14T17:56:52.944Z"}
-2024-07-14 23:26:52 INFO  CreateEmployeeAPITests:93 - Test successfully completed.
-2024-07-14 23:26:52 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TC001_ValidateCustomerApiWithValidData
-2024-07-14 23:26:52 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC002_ValidateCustomerApiWithInValidData
-2024-07-14 23:26:53 DEBUG CreateEmployeeAPITests:106 - Response status code: 201
-2024-07-14 23:26:53 DEBUG CreateEmployeeAPITests:107 - Response body: {"name":"\"$%%^","job":"qa","id":"625","createdAt":"2024-07-14T17:56:53.915Z"}
-2024-07-14 23:26:53 INFO  CreateEmployeeAPITests:115 - Test successfully completed.
-2024-07-14 23:26:53 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TC002_ValidateCustomerApiWithInValidData
-2024-07-14 23:26:53 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC002_ValidateCustomerApiWithInValidData
-2024-07-14 23:26:54 DEBUG CreateEmployeeAPITests:106 - Response status code: 201
-2024-07-14 23:26:54 DEBUG CreateEmployeeAPITests:107 - Response body: {"name":"Rohit","job":"%$%^&","id":"832","createdAt":"2024-07-14T17:56:54.701Z"}
-2024-07-14 23:26:54 INFO  CreateEmployeeAPITests:115 - Test successfully completed.
-2024-07-14 23:26:54 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TC002_ValidateCustomerApiWithInValidData
-2024-07-14 23:26:54 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC002_ValidateCustomerApiWithInValidData
-2024-07-14 23:26:54 DEBUG CreateEmployeeAPITests:106 - Response status code: 201
-2024-07-14 23:26:54 DEBUG CreateEmployeeAPITests:107 - Response body: {"name":"Hiya","job":"","id":"749","createdAt":"2024-07-14T17:56:55.463Z"}
-2024-07-14 23:26:54 INFO  CreateEmployeeAPITests:115 - Test successfully completed.
-2024-07-14 23:26:54 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TC002_ValidateCustomerApiWithInValidData
-2024-07-14 23:26:54 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee
-2024-07-14 23:26:55 DEBUG CreateEmployeeAPITests:131 - Response status code: 201
-2024-07-14 23:26:55 DEBUG CreateEmployeeAPITests:132 - Response body: {"name":"Dhoni","job":"PM","id":"283","createdAt":"2024-07-14T17:56:55.949Z"}
-2024-07-14 23:26:55 INFO  CreateEmployeeAPITests:140 - Test successfully completed.
-2024-07-14 23:26:55 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee
-2024-07-14 23:26:55 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee
-2024-07-14 23:26:56 DEBUG CreateEmployeeAPITests:131 - Response status code: 201
-2024-07-14 23:26:56 DEBUG CreateEmployeeAPITests:132 - Response body: {"name":"Dhoni","job":"PM","id":"278","createdAt":"2024-07-14T17:56:56.663Z"}
-2024-07-14 23:26:56 INFO  CreateEmployeeAPITests:140 - Test successfully completed.
-2024-07-14 23:26:56 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee
-2024-07-14 23:26:56 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC004_ValidateUniqueEmployeeIds
-2024-07-14 23:26:56 INFO  CreateEmployeeAPITests:151 - Test successfully completed.
-2024-07-14 23:26:56 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TC004_ValidateUniqueEmployeeIds
-2024-07-14 23:26:56 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC004__ValidateCreateAPILatency
-2024-07-14 23:26:56 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TC004__ValidateCreateAPILatency
-2024-07-14 23:26:56 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-07-14 23:26:56 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
-2024-07-14 23:26:56 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-07-14 23:26:56 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
-2024-07-14 23:26:56 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCG01_ValidateGetRequestForValidUser
-2024-07-14 23:26:56 INFO  GetEmployeeAPITest:70 - Starting test with data: {last_name=Weaver, id=2.0, avatar=https://reqres.in/img/faces/2-image.jpg, text=To keep ReqRes free, contributions towards server costs are appreciated!, first_name=Janet, email=janet.weaver@reqres.in, url=https://reqres.in/#support-heading}
-2024-07-14 23:26:56 DEBUG GetEmployeeAPITest:75 - Response status code: 200
-2024-07-14 23:26:56 DEBUG GetEmployeeAPITest:76 - Response body: {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
-2024-07-14 23:26:56 INFO  GetEmployeeAPITest:102 - Test successfully completed.
-2024-07-14 23:26:56 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCG01_ValidateGetRequestForValidUser
-2024-07-14 23:26:56 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCG02_ValidateGetRequestForNonExistentUser
-2024-07-14 23:26:57 DEBUG GetEmployeeAPITest:112 - Response status code: 404
-2024-07-14 23:26:57 DEBUG GetEmployeeAPITest:113 - Response body: {}
-2024-07-14 23:26:57 INFO  GetEmployeeAPITest:115 - Test successfully completed.
-2024-07-14 23:26:57 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCG02_ValidateGetRequestForNonExistentUser
-2024-07-14 23:26:57 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCG03_ValidateGetAPILatency
-2024-07-14 23:26:57 DEBUG GetEmployeeAPITest:126 - Response status code: 200
-2024-07-14 23:26:57 DEBUG GetEmployeeAPITest:127 - Response body: {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
-2024-07-14 23:26:57 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCG03_ValidateGetAPILatency
-2024-07-14 23:26:58 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
-2024-07-14 23:26:58 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
-2024-07-14 23:26:58 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCUO1_validateValidEmployeeUpdate
-2024-07-14 23:26:58 DEBUG UpdateEmployeeAPITest:68 - Response status code: 200
-2024-07-14 23:26:58 DEBUG UpdateEmployeeAPITest:69 - Response body: {"name":"morpheus","job":"zion resident","updatedAt":"2024-07-14T17:56:59.172Z"}
-2024-07-14 23:26:58 INFO  UpdateEmployeeAPITest:78 - Test successfully completed.
-2024-07-14 23:26:58 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCUO1_validateValidEmployeeUpdate
-2024-07-14 23:26:58 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCU02_validateUpdationWithInvalidEmployeeId
-2024-07-14 23:26:59 DEBUG UpdateEmployeeAPITest:90 - Response status code: 404
-2024-07-14 23:26:59 DEBUG UpdateEmployeeAPITest:91 - Response body: <!DOCTYPE html>
+2024-07-15 14:29:26 INFO  ExtentReportListener:23 - onstart started
+2024-07-15 14:29:26 INFO  ExtentReportListener:31 - onstart completed
+2024-07-15 14:29:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-07-15 14:29:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-07-15 14:29:26 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-07-15 14:29:26 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-07-15 14:29:27 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC001_ValidateCustomerApiWithValidData
+2024-07-15 14:29:27 INFO  CreateEmployeeAPITests:79 - Starting test with data: {name=sia, job=qa}
+2024-07-15 14:29:29 DEBUG ResponseHandler:43 - Response status code: 201
+2024-07-15 14:29:29 DEBUG ResponseHandler:44 - Response body: {"name":"sia","job":"qa","id":"977","createdAt":"2024-07-15T08:59:28.987Z"}
+2024-07-15 14:29:29 INFO  ResponseHandler:56 - TestvalidateNotNullResponseData successfully completed.
+2024-07-15 14:29:29 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TC001_ValidateCustomerApiWithValidData
+2024-07-15 14:29:29 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC001_ValidateCustomerApiWithValidData
+2024-07-15 14:29:29 INFO  CreateEmployeeAPITests:79 - Starting test with data: {name=kia  MALHOTRA J, job=dev}
+2024-07-15 14:29:30 DEBUG ResponseHandler:43 - Response status code: 201
+2024-07-15 14:29:30 DEBUG ResponseHandler:44 - Response body: {"name":"kia  MALHOTRA J","job":"dev","id":"838","createdAt":"2024-07-15T08:59:30.377Z"}
+2024-07-15 14:29:30 INFO  ResponseHandler:56 - TestvalidateNotNullResponseData successfully completed.
+2024-07-15 14:29:30 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TC001_ValidateCustomerApiWithValidData
+2024-07-15 14:29:30 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC002_ValidateCustomerApiWithInValidData
+2024-07-15 14:29:30 DEBUG ResponseHandler:17 - Response status code: 201
+2024-07-15 14:29:30 DEBUG ResponseHandler:18 - Response body: {"name":"\"$%%^","job":"qa","id":"182","createdAt":"2024-07-15T08:59:30.882Z"}
+2024-07-15 14:29:30 ERROR ExtentReportListener:58 - Extent Report: Test Case Failed - TC002_ValidateCustomerApiWithInValidData
+java.lang.AssertionError: The following asserts failed:
+	Able to create employee with invalid data Expected status code 400 but found 201 expected [400] but found [201]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at com.poppulo.employee_api_methods.ResponseHandler.handleApiResponseCode(ResponseHandler.java:23) ~[classes/:?]
+	at com.poppulo.employee_api_tests.CreateEmployeeAPITests.TC002_ValidateCustomerApiWithInValidData(CreateEmployeeAPITests.java:95) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:794) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestRunner.run(TestRunner.java:596) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1063) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestNG.run(TestNG.java:1031) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-07-15 14:29:30 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC002_ValidateCustomerApiWithInValidData
+2024-07-15 14:29:31 DEBUG ResponseHandler:17 - Response status code: 201
+2024-07-15 14:29:31 DEBUG ResponseHandler:18 - Response body: {"name":"Rohit","job":"%$%^&","id":"868","createdAt":"2024-07-15T08:59:31.386Z"}
+2024-07-15 14:29:31 ERROR ExtentReportListener:58 - Extent Report: Test Case Failed - TC002_ValidateCustomerApiWithInValidData
+java.lang.AssertionError: The following asserts failed:
+	Able to create employee with invalid data Expected status code 400 but found 201 expected [400] but found [201]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at com.poppulo.employee_api_methods.ResponseHandler.handleApiResponseCode(ResponseHandler.java:23) ~[classes/:?]
+	at com.poppulo.employee_api_tests.CreateEmployeeAPITests.TC002_ValidateCustomerApiWithInValidData(CreateEmployeeAPITests.java:95) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:794) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestRunner.run(TestRunner.java:596) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1063) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestNG.run(TestNG.java:1031) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-07-15 14:29:31 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC002_ValidateCustomerApiWithInValidData
+2024-07-15 14:29:31 DEBUG ResponseHandler:17 - Response status code: 201
+2024-07-15 14:29:31 DEBUG ResponseHandler:18 - Response body: {"name":"Hiya","job":"","id":"44","createdAt":"2024-07-15T08:59:31.880Z"}
+2024-07-15 14:29:31 ERROR ExtentReportListener:58 - Extent Report: Test Case Failed - TC002_ValidateCustomerApiWithInValidData
+java.lang.AssertionError: The following asserts failed:
+	Able to create employee with invalid data Expected status code 400 but found 201 expected [400] but found [201]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at com.poppulo.employee_api_methods.ResponseHandler.handleApiResponseCode(ResponseHandler.java:23) ~[classes/:?]
+	at com.poppulo.employee_api_tests.CreateEmployeeAPITests.TC002_ValidateCustomerApiWithInValidData(CreateEmployeeAPITests.java:95) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:794) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestRunner.run(TestRunner.java:596) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1063) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestNG.run(TestNG.java:1031) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-07-15 14:29:31 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee
+2024-07-15 14:29:32 DEBUG ResponseHandler:31 - Response status code: 201
+2024-07-15 14:29:32 DEBUG ResponseHandler:32 - Response body: {"name":"Dhoni","job":"PM","id":"785","createdAt":"2024-07-15T08:59:32.334Z"}
+2024-07-15 14:29:32 INFO  ResponseHandler:38 - handleApiResponseCode method successfully completed.
+2024-07-15 14:29:32 INFO  CreateEmployeeAPITests:114 - Test successfully completed.
+2024-07-15 14:29:32 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee
+2024-07-15 14:29:32 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee
+2024-07-15 14:29:32 DEBUG ResponseHandler:31 - Response status code: 201
+2024-07-15 14:29:32 DEBUG ResponseHandler:32 - Response body: {"name":"Dhoni","job":"PM","id":"348","createdAt":"2024-07-15T08:59:32.895Z"}
+2024-07-15 14:29:32 INFO  ResponseHandler:38 - handleApiResponseCode method successfully completed.
+2024-07-15 14:29:32 INFO  CreateEmployeeAPITests:114 - Test successfully completed.
+2024-07-15 14:29:32 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee
+2024-07-15 14:29:32 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC004_ValidateUniqueEmployeeIds
+2024-07-15 14:29:32 INFO  CreateEmployeeAPITests:125 - Test successfully completed.
+2024-07-15 14:29:32 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TC004_ValidateUniqueEmployeeIds
+2024-07-15 14:29:32 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC004__ValidateCreateAPILatency
+2024-07-15 14:29:33 INFO  CreateEmployeeAPITests:137 - Test successfully completed.
+2024-07-15 14:29:33 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TC004__ValidateCreateAPILatency
+2024-07-15 14:29:33 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-07-15 14:29:33 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-07-15 14:29:33 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-07-15 14:29:33 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-07-15 14:29:33 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCG01_ValidateGetRequestForValidUser
+2024-07-15 14:29:33 INFO  GetEmployeeAPITest:75 - Starting test with data: {last_name=Weaver, id=2.0, avatar=https://reqres.in/img/faces/2-image.jpg, text=To keep ReqRes free, contributions towards server costs are appreciated!, first_name=Janet, email=janet.weaver@reqres.in, url=https://reqres.in/#support-heading}
+2024-07-15 14:29:33 DEBUG GetEmployeeAPITest:80 - Response status code: 200
+2024-07-15 14:29:33 DEBUG GetEmployeeAPITest:81 - Response body: {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+2024-07-15 14:29:33 INFO  GetEmployeeAPITest:107 - Test successfully completed.
+2024-07-15 14:29:33 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCG01_ValidateGetRequestForValidUser
+2024-07-15 14:29:33 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCG02_ValidateGetRequestForNonExistentUser
+2024-07-15 14:29:34 DEBUG ResponseHandler:17 - Response status code: 404
+2024-07-15 14:29:34 DEBUG ResponseHandler:18 - Response body: {}
+2024-07-15 14:29:34 INFO  ResponseHandler:24 - handleApiResponseCode method Test successfully completed.
+2024-07-15 14:29:34 INFO  GetEmployeeAPITest:117 - Test successfully completed.
+2024-07-15 14:29:34 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCG02_ValidateGetRequestForNonExistentUser
+2024-07-15 14:29:34 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCG03_ValidateGetAPILatency
+2024-07-15 14:29:34 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCG03_ValidateGetAPILatency
+2024-07-15 14:29:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-07-15 14:29:34 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-07-15 14:29:34 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCUO1_validateValidEmployeeUpdate
+2024-07-15 14:29:34 DEBUG ResponseHandler:31 - Response status code: 200
+2024-07-15 14:29:34 DEBUG ResponseHandler:32 - Response body: {"name":"morpheus","job":"zion resident","updatedAt":"2024-07-15T08:59:34.801Z"}
+2024-07-15 14:29:34 INFO  ResponseHandler:38 - handleApiResponseCode method successfully completed.
+2024-07-15 14:29:34 INFO  UpdateEmployeeAPITest:79 - Test successfully completed.
+2024-07-15 14:29:34 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCUO1_validateValidEmployeeUpdate
+2024-07-15 14:29:34 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCU02_validateUpdationWithInvalidEmployeeId
+2024-07-15 14:29:35 DEBUG ResponseHandler:17 - Response status code: 404
+2024-07-15 14:29:35 DEBUG ResponseHandler:18 - Response body: <!DOCTYPE html>
 <html lang="en">
     <head>
         <!-- Google Tag Manager -->
@@ -254,11 +356,12 @@
     </body>
 </html>
 
-2024-07-14 23:26:59 INFO  UpdateEmployeeAPITest:93 - Test successfully completed.
-2024-07-14 23:26:59 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCU02_validateUpdationWithInvalidEmployeeId
-2024-07-14 23:26:59 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCU03_validateDataUpdationOfValidEmployeeWithInvalidData
-2024-07-14 23:26:59 DEBUG UpdateEmployeeAPITest:104 - Response status code: 404
-2024-07-14 23:26:59 DEBUG UpdateEmployeeAPITest:105 - Response body: <!DOCTYPE html>
+2024-07-15 14:29:35 INFO  ResponseHandler:24 - handleApiResponseCode method Test successfully completed.
+2024-07-15 14:29:35 INFO  UpdateEmployeeAPITest:91 - Test successfully completed.
+2024-07-15 14:29:35 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCU02_validateUpdationWithInvalidEmployeeId
+2024-07-15 14:29:35 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCU03_validateDataUpdationOfValidEmployeeWithInvalidData
+2024-07-15 14:29:36 DEBUG ResponseHandler:17 - Response status code: 404
+2024-07-15 14:29:36 DEBUG ResponseHandler:18 - Response body: <!DOCTYPE html>
 <html lang="en">
     <head>
         <!-- Google Tag Manager -->
@@ -438,30 +541,47 @@
     </body>
 </html>
 
-2024-07-14 23:26:59 INFO  UpdateEmployeeAPITest:109 - Test successfully completed.
-2024-07-14 23:26:59 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCU03_validateDataUpdationOfValidEmployeeWithInvalidData
-2024-07-14 23:26:59 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC005__ValidateUpdateAPILatency
-2024-07-14 23:27:00 DEBUG UpdateEmployeeAPITest:140 - Response status code: 200
-2024-07-14 23:27:00 DEBUG UpdateEmployeeAPITest:141 - Response body: {"name":"morpheus","job":"zion resident","updatedAt":"2024-07-14T17:57:01.155Z"}
-2024-07-14 23:27:00 INFO  UpdateEmployeeAPITest:150 - Test successfully completed.
-2024-07-14 23:27:00 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TC005__ValidateUpdateAPILatency
-2024-07-14 23:27:00 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCD001_ValidateValidEmployeeDeletion
-2024-07-14 23:27:00 INFO  DeleteEmployeeTest:45 - Starting test TCD001_ValidateValidEmployeeDeletion
-2024-07-14 23:27:00 DEBUG DeleteEmployeeTest:48 - Response status code: 204
-2024-07-14 23:27:00 DEBUG DeleteEmployeeTest:49 - Response body: 
-2024-07-14 23:27:00 INFO  DeleteEmployeeTest:51 - TCD001_ValidateValidEmployeeDeletion: Test successfully completed.
-2024-07-14 23:27:00 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCD001_ValidateValidEmployeeDeletion
-2024-07-14 23:27:00 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCD002_ValidatetNonExistentEmployeeDeletion
-2024-07-14 23:27:01 DEBUG DeleteEmployeeTest:59 - Response status code: 204
-2024-07-14 23:27:01 DEBUG DeleteEmployeeTest:60 - Response body: 
-2024-07-14 23:27:01 ERROR ExtentReportListener:58 - Extent Report: Test Case Failed - TCD002_ValidatetNonExistentEmployeeDeletion
-java.lang.AssertionError: Expected status code 404 (Not Found),Able to delete NonExistent employee expected [404] but found [204]
-	at org.testng.Assert.fail(Assert.java:99) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
-	at org.testng.Assert.failNotEquals(Assert.java:1037) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
-	at org.testng.Assert.assertEquals(Assert.java:122) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
-	at org.testng.Assert.assertEquals(Assert.java:907) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
-	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD002_ValidatetNonExistentEmployeeDeletion(DeleteEmployeeTest.java:62) ~[test-classes/:?]
+2024-07-15 14:29:36 INFO  ResponseHandler:24 - handleApiResponseCode method Test successfully completed.
+2024-07-15 14:29:36 INFO  UpdateEmployeeAPITest:102 - Test successfully completed.
+2024-07-15 14:29:36 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCU03_validateDataUpdationOfValidEmployeeWithInvalidData
+2024-07-15 14:29:36 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC005__ValidateUpdateAPILatency
+2024-07-15 14:29:36 INFO  UpdateEmployeeAPITest:130 - Test successfully completed.
+2024-07-15 14:29:36 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TC005__ValidateUpdateAPILatency
+2024-07-15 14:29:36 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCD001_ValidateValidEmployeeDeletion
+2024-07-15 14:29:37 INFO  DeleteEmployeeTest:50 - Starting test TCD001_ValidateValidEmployeeDeletion
+2024-07-15 14:29:37 DEBUG ResponseHandler:31 - Response status code: 204
+2024-07-15 14:29:37 DEBUG ResponseHandler:32 - Response body: 
+2024-07-15 14:29:37 INFO  ResponseHandler:38 - handleApiResponseCode method successfully completed.
+2024-07-15 14:29:37 INFO  DeleteEmployeeTest:52 - TCD001_ValidateValidEmployeeDeletion: Test successfully completed.
+2024-07-15 14:29:37 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCD001_ValidateValidEmployeeDeletion
+2024-07-15 14:29:37 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCD002_ValidatetNonExistentEmployeeDeletion
+2024-07-15 14:29:37 DEBUG ResponseHandler:31 - Response status code: 204
+2024-07-15 14:29:37 DEBUG ResponseHandler:32 - Response body: 
+2024-07-15 14:29:37 INFO  ResponseHandler:38 - handleApiResponseCode method successfully completed.
+2024-07-15 14:29:37 INFO  DeleteEmployeeTest:61 - Test successfully completed.
+2024-07-15 14:29:37 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCD002_ValidatetNonExistentEmployeeDeletion
+2024-07-15 14:29:38 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat
+2024-07-15 14:29:38 DEBUG ResponseHandler:17 - Response status code: 204
+2024-07-15 14:29:38 DEBUG ResponseHandler:18 - Response body: 
+2024-07-15 14:29:38 INFO  ResponseHandler:24 - handleApiResponseCode method Test successfully completed.
+2024-07-15 14:29:38 INFO  DeleteEmployeeTest:71 - Test successfully completed.
+2024-07-15 14:29:38 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat
+2024-07-15 14:29:38 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCD004_ValidateDeleteEmployeeWithEmptyId
+2024-07-15 14:29:38 DEBUG ResponseHandler:17 - Response status code: 204
+2024-07-15 14:29:38 DEBUG ResponseHandler:18 - Response body: 
+2024-07-15 14:29:38 INFO  ResponseHandler:24 - handleApiResponseCode method Test successfully completed.
+2024-07-15 14:29:38 INFO  DeleteEmployeeTest:80 - Test successfully completed.
+2024-07-15 14:29:38 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCD004_ValidateDeleteEmployeeWithEmptyId
+2024-07-15 14:29:38 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCD005_ValidateDeleteEmployeeWithMalformedRequest
+2024-07-15 14:29:39 DEBUG ResponseHandler:17 - Response status code: 204
+2024-07-15 14:29:39 DEBUG ResponseHandler:18 - Response body: 
+2024-07-15 14:29:39 ERROR ExtentReportListener:58 - Extent Report: Test Case Failed - TCD005_ValidateDeleteEmployeeWithMalformedRequest
+java.lang.AssertionError: The following asserts failed:
+	Able to delete  employee with malformed delete request Expected status code 400 but found 204 expected [400] but found [204]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at com.poppulo.employee_api_methods.ResponseHandler.handleApiResponseCode(ResponseHandler.java:23) ~[classes/:?]
+	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD005_ValidateDeleteEmployeeWithMalformedRequest(DeleteEmployeeTest.java:93) ~[test-classes/:?]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
@@ -490,17 +610,47 @@ java.lang.AssertionError: Expected status code 404 (Not Found),Able to delete No
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
-2024-07-14 23:27:01 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat
-2024-07-14 23:27:02 DEBUG DeleteEmployeeTest:73 - Response status code: 204
-2024-07-14 23:27:02 DEBUG DeleteEmployeeTest:74 - Response body: 
-2024-07-14 23:27:02 ERROR ExtentReportListener:58 - Extent Report: Test Case Failed - TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat
-java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with InvalidIdFormat expected [400] but found [204]
-	at org.testng.Assert.fail(Assert.java:99) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
-	at org.testng.Assert.failNotEquals(Assert.java:1037) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
-	at org.testng.Assert.assertEquals(Assert.java:122) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
-	at org.testng.Assert.assertEquals(Assert.java:907) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
-	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat(DeleteEmployeeTest.java:75) ~[test-classes/:?]
+2024-07-15 14:29:39 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCD006_ValidateSimultaneousDeleteOperations
+2024-07-15 14:29:40 DEBUG DeleteEmployeeTest:108 - Response status code: 204
+2024-07-15 14:29:40 DEBUG DeleteEmployeeTest:109 - Response body: 
+2024-07-15 14:29:40 DEBUG DeleteEmployeeTest:108 - Response status code: 204
+2024-07-15 14:29:40 DEBUG DeleteEmployeeTest:109 - Response body: 
+2024-07-15 14:29:41 DEBUG DeleteEmployeeTest:108 - Response status code: 204
+2024-07-15 14:29:41 DEBUG DeleteEmployeeTest:109 - Response body: 
+2024-07-15 14:29:42 INFO  DeleteEmployeeTest:123 - Test successfully completed.
+2024-07-15 14:29:42 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCD006_ValidateSimultaneousDeleteOperations
+2024-07-15 14:29:42 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCD007_ValidateDeletetAPILatency
+2024-07-15 14:29:43 INFO  DeleteEmployeeTest:135 - Test successfully completed.
+2024-07-15 14:29:43 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCD007_ValidateDeletetAPILatency
+2024-07-15 14:29:43 INFO  ExtentReportListener:82 - Extent Report: Test Suite Execution Finished
+2024-07-15 14:31:10 INFO  ExtentReportListener:23 - onstart started
+2024-07-15 14:31:10 INFO  ExtentReportListener:31 - onstart completed
+2024-07-15 14:31:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-07-15 14:31:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-07-15 14:31:10 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-07-15 14:31:10 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-07-15 14:31:11 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC001_ValidateCustomerApiWithValidData
+2024-07-15 14:31:11 INFO  CreateEmployeeAPITests:79 - Starting test with data: {name=sia, job=qa}
+2024-07-15 14:31:13 DEBUG ResponseHandler:43 - Response status code: 201
+2024-07-15 14:31:13 DEBUG ResponseHandler:44 - Response body: {"name":"sia","job":"qa","id":"901","createdAt":"2024-07-15T09:01:12.827Z"}
+2024-07-15 14:31:13 INFO  ResponseHandler:56 - TestvalidateNotNullResponseData successfully completed.
+2024-07-15 14:31:13 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TC001_ValidateCustomerApiWithValidData
+2024-07-15 14:31:13 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC001_ValidateCustomerApiWithValidData
+2024-07-15 14:31:13 INFO  CreateEmployeeAPITests:79 - Starting test with data: {name=kia  MALHOTRA J, job=dev}
+2024-07-15 14:31:14 DEBUG ResponseHandler:43 - Response status code: 201
+2024-07-15 14:31:14 DEBUG ResponseHandler:44 - Response body: {"name":"kia  MALHOTRA J","job":"dev","id":"891","createdAt":"2024-07-15T09:01:14.249Z"}
+2024-07-15 14:31:14 INFO  ResponseHandler:56 - TestvalidateNotNullResponseData successfully completed.
+2024-07-15 14:31:14 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TC001_ValidateCustomerApiWithValidData
+2024-07-15 14:31:14 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC002_ValidateCustomerApiWithInValidData
+2024-07-15 14:31:15 DEBUG ResponseHandler:17 - Response status code: 201
+2024-07-15 14:31:15 DEBUG ResponseHandler:18 - Response body: {"name":"\"$%%^","job":"qa","id":"538","createdAt":"2024-07-15T09:01:14.747Z"}
+2024-07-15 14:31:15 ERROR ExtentReportListener:58 - Extent Report: Test Case Failed - TC002_ValidateCustomerApiWithInValidData
+java.lang.AssertionError: The following asserts failed:
+	Able to create employee with invalid data Expected status code 400 but found 201 expected [400] but found [201]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at com.poppulo.employee_api_methods.ResponseHandler.handleApiResponseCode(ResponseHandler.java:23) ~[classes/:?]
+	at com.poppulo.employee_api_tests.CreateEmployeeAPITests.TC002_ValidateCustomerApiWithInValidData(CreateEmployeeAPITests.java:95) ~[test-classes/:?]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
@@ -529,17 +679,16 @@ java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete 
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
-2024-07-14 23:27:02 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCD004_ValidateDeleteEmployeeWithEmptyId
-2024-07-14 23:27:03 DEBUG DeleteEmployeeTest:86 - Response status code: 204
-2024-07-14 23:27:03 DEBUG DeleteEmployeeTest:87 - Response body: 
-2024-07-14 23:27:03 ERROR ExtentReportListener:58 - Extent Report: Test Case Failed - TCD004_ValidateDeleteEmployeeWithEmptyId
-java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with empty id expected [400] but found [204]
-	at org.testng.Assert.fail(Assert.java:99) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
-	at org.testng.Assert.failNotEquals(Assert.java:1037) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
-	at org.testng.Assert.assertEquals(Assert.java:122) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
-	at org.testng.Assert.assertEquals(Assert.java:907) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
-	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD004_ValidateDeleteEmployeeWithEmptyId(DeleteEmployeeTest.java:89) ~[test-classes/:?]
+2024-07-15 14:31:15 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC002_ValidateCustomerApiWithInValidData
+2024-07-15 14:31:15 DEBUG ResponseHandler:17 - Response status code: 201
+2024-07-15 14:31:15 DEBUG ResponseHandler:18 - Response body: {"name":"Rohit","job":"%$%^&","id":"97","createdAt":"2024-07-15T09:01:15.833Z"}
+2024-07-15 14:31:15 ERROR ExtentReportListener:58 - Extent Report: Test Case Failed - TC002_ValidateCustomerApiWithInValidData
+java.lang.AssertionError: The following asserts failed:
+	Able to create employee with invalid data Expected status code 400 but found 201 expected [400] but found [201]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at com.poppulo.employee_api_methods.ResponseHandler.handleApiResponseCode(ResponseHandler.java:23) ~[classes/:?]
+	at com.poppulo.employee_api_tests.CreateEmployeeAPITests.TC002_ValidateCustomerApiWithInValidData(CreateEmployeeAPITests.java:95) ~[test-classes/:?]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
@@ -568,17 +717,16 @@ java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete 
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
-2024-07-14 23:27:03 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCD005_ValidateDeleteEmployeeWithMalformedRequest
-2024-07-14 23:27:03 DEBUG DeleteEmployeeTest:105 - Response status code: 204
-2024-07-14 23:27:03 DEBUG DeleteEmployeeTest:106 - Response body: 
-2024-07-14 23:27:03 ERROR ExtentReportListener:58 - Extent Report: Test Case Failed - TCD005_ValidateDeleteEmployeeWithMalformedRequest
-java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete  employee with malformed delete request expected [400] but found [204]
-	at org.testng.Assert.fail(Assert.java:99) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
-	at org.testng.Assert.failNotEquals(Assert.java:1037) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
-	at org.testng.Assert.assertEquals(Assert.java:122) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
-	at org.testng.Assert.assertEquals(Assert.java:907) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
-	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD005_ValidateDeleteEmployeeWithMalformedRequest(DeleteEmployeeTest.java:107) ~[test-classes/:?]
+2024-07-15 14:31:15 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC002_ValidateCustomerApiWithInValidData
+2024-07-15 14:31:16 DEBUG ResponseHandler:17 - Response status code: 201
+2024-07-15 14:31:16 DEBUG ResponseHandler:18 - Response body: {"name":"Hiya","job":"","id":"376","createdAt":"2024-07-15T09:01:16.338Z"}
+2024-07-15 14:31:16 ERROR ExtentReportListener:58 - Extent Report: Test Case Failed - TC002_ValidateCustomerApiWithInValidData
+java.lang.AssertionError: The following asserts failed:
+	Able to create employee with invalid data Expected status code 400 but found 201 expected [400] but found [201]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at com.poppulo.employee_api_methods.ResponseHandler.handleApiResponseCode(ResponseHandler.java:23) ~[classes/:?]
+	at com.poppulo.employee_api_tests.CreateEmployeeAPITests.TC002_ValidateCustomerApiWithInValidData(CreateEmployeeAPITests.java:95) ~[test-classes/:?]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
@@ -607,18 +755,496 @@ java.lang.AssertionError: Expected status code 400 (Bad Request),Able to delete 
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
-2024-07-14 23:27:03 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCD006_ValidateSimultaneousDeleteOperations
-2024-07-14 23:27:04 DEBUG DeleteEmployeeTest:123 - Response status code: 204
-2024-07-14 23:27:04 DEBUG DeleteEmployeeTest:124 - Response body: 
-2024-07-14 23:27:05 DEBUG DeleteEmployeeTest:123 - Response status code: 204
-2024-07-14 23:27:05 DEBUG DeleteEmployeeTest:124 - Response body: 
-2024-07-14 23:27:05 DEBUG DeleteEmployeeTest:123 - Response status code: 204
-2024-07-14 23:27:05 DEBUG DeleteEmployeeTest:124 - Response body: 
-2024-07-14 23:27:06 INFO  DeleteEmployeeTest:138 - Test successfully completed.
-2024-07-14 23:27:06 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCD006_ValidateSimultaneousDeleteOperations
-2024-07-14 23:27:06 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCD007_ValidateDeletetAPILatency
-2024-07-14 23:27:06 DEBUG DeleteEmployeeTest:149 - Response status code: 204
-2024-07-14 23:27:06 DEBUG DeleteEmployeeTest:150 - Response body: 
-2024-07-14 23:27:06 INFO  DeleteEmployeeTest:162 - Test successfully completed.
-2024-07-14 23:27:06 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCD007_ValidateDeletetAPILatency
-2024-07-14 23:27:07 INFO  ExtentReportListener:82 - Extent Report: Test Suite Execution Finished
+2024-07-15 14:31:16 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee
+2024-07-15 14:31:17 DEBUG ResponseHandler:31 - Response status code: 201
+2024-07-15 14:31:17 DEBUG ResponseHandler:32 - Response body: {"name":"Dhoni","job":"PM","id":"493","createdAt":"2024-07-15T09:01:17.050Z"}
+2024-07-15 14:31:17 INFO  ResponseHandler:38 - handleApiResponseCode method successfully completed.
+2024-07-15 14:31:17 INFO  CreateEmployeeAPITests:114 - Test successfully completed.
+2024-07-15 14:31:17 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee
+2024-07-15 14:31:17 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee
+2024-07-15 14:31:18 DEBUG ResponseHandler:31 - Response status code: 201
+2024-07-15 14:31:18 DEBUG ResponseHandler:32 - Response body: {"name":"Dhoni","job":"PM","id":"868","createdAt":"2024-07-15T09:01:17.988Z"}
+2024-07-15 14:31:18 INFO  ResponseHandler:38 - handleApiResponseCode method successfully completed.
+2024-07-15 14:31:18 INFO  CreateEmployeeAPITests:114 - Test successfully completed.
+2024-07-15 14:31:18 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TC003_ValidateMultipleEmployeeCReationWithSameDataAndVerifyUniqueIdForEachEmployee
+2024-07-15 14:31:18 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC004_ValidateUniqueEmployeeIds
+2024-07-15 14:31:18 INFO  CreateEmployeeAPITests:125 - Test successfully completed.
+2024-07-15 14:31:18 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TC004_ValidateUniqueEmployeeIds
+2024-07-15 14:31:18 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC004__ValidateCreateAPILatency
+2024-07-15 14:31:18 INFO  CreateEmployeeAPITests:137 - Test successfully completed.
+2024-07-15 14:31:18 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TC004__ValidateCreateAPILatency
+2024-07-15 14:31:18 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-07-15 14:31:18 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+2024-07-15 14:31:18 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-07-15 14:31:18 DEBUG POIXMLFactory:65 - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+2024-07-15 14:31:18 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCG01_ValidateGetRequestForValidUser
+2024-07-15 14:31:18 INFO  GetEmployeeAPITest:75 - Starting test with data: {last_name=Weaver, id=2.0, avatar=https://reqres.in/img/faces/2-image.jpg, text=To keep ReqRes free, contributions towards server costs are appreciated!, first_name=Janet, email=janet.weaver@reqres.in, url=https://reqres.in/#support-heading}
+2024-07-15 14:31:18 DEBUG GetEmployeeAPITest:80 - Response status code: 200
+2024-07-15 14:31:18 DEBUG GetEmployeeAPITest:81 - Response body: {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+2024-07-15 14:31:18 INFO  GetEmployeeAPITest:107 - Test successfully completed.
+2024-07-15 14:31:18 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCG01_ValidateGetRequestForValidUser
+2024-07-15 14:31:18 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCG02_ValidateGetRequestForNonExistentUser
+2024-07-15 14:31:18 DEBUG ResponseHandler:17 - Response status code: 404
+2024-07-15 14:31:18 DEBUG ResponseHandler:18 - Response body: {}
+2024-07-15 14:31:18 INFO  ResponseHandler:24 - handleApiResponseCode method Test successfully completed.
+2024-07-15 14:31:18 INFO  GetEmployeeAPITest:117 - Test successfully completed.
+2024-07-15 14:31:18 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCG02_ValidateGetRequestForNonExistentUser
+2024-07-15 14:31:18 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCG03_ValidateGetAPILatency
+2024-07-15 14:31:18 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCG03_ValidateGetAPILatency
+2024-07-15 14:31:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2024-07-15 14:31:19 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+2024-07-15 14:31:19 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCUO1_validateValidEmployeeUpdate
+2024-07-15 14:31:19 DEBUG ResponseHandler:31 - Response status code: 200
+2024-07-15 14:31:19 DEBUG ResponseHandler:32 - Response body: {"name":"morpheus","job":"zion resident","updatedAt":"2024-07-15T09:01:19.532Z"}
+2024-07-15 14:31:19 INFO  ResponseHandler:38 - handleApiResponseCode method successfully completed.
+2024-07-15 14:31:19 INFO  UpdateEmployeeAPITest:79 - Test successfully completed.
+2024-07-15 14:31:19 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCUO1_validateValidEmployeeUpdate
+2024-07-15 14:31:19 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCU02_validateUpdationWithInvalidEmployeeId
+2024-07-15 14:31:20 DEBUG ResponseHandler:17 - Response status code: 404
+2024-07-15 14:31:20 DEBUG ResponseHandler:18 - Response body: <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google Tag Manager -->
+        <script>
+            ;(function (w, d, s, l, i) {
+                w[l] = w[l] || []
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js',
+                })
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : ''
+                j.async = true
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+                f.parentNode.insertBefore(j, f)
+            })(window, document, 'script', 'dataLayer', 'GTM-KB622KF')
+        </script>
+        <!-- End Google Tag Manager -->
+        <script src="https://js.stripe.com/v3/"></script>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
+        <meta
+            name="description"
+            content="A hosted REST-API ready to respond to your AJAX requests"
+        />
+        <title>
+            Reqres - A hosted REST-API ready to respond to your AJAX requests
+        </title>
+        <link
+            href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/css/app.css" />
+        <script
+            type="text/javascript"
+            src="//m.servedby-buysellads.com/monetization.custom.js"
+        ></script>
+    </head>
+    <body>
+        <div class="header-content">
+            <header class="main-header">
+                <section class="wrap">
+                    <h1 class="logo">
+                        <a href="/"><img src="/img/logo.png" alt="" /></a>
+                    </h1>
+                </section>
+            </header>
+            <main class="the-sell">
+                <div class="wrap">
+                    <h2 class="tagline">
+                        Test your front-end against a real API
+                    </h2>
+                    <section class="key-sells">
+                        <div class="sell">
+                            <div class="v-center">
+                                <h3>Fake data</h3>
+                                <p>
+                                    No more tedious sample data creation, we've
+                                    got it covered.
+                                </p>
+                            </div>
+                            <i class="fa fa-cloud-download"></i>
+                        </div>
+                        <div class="sell">
+                            <div class="v-center">
+                                <h3>Real responses</h3>
+                                <p>
+                                    Develop with real response codes. GET, POST,
+                                    PUT &amp; DELETE supported.
+                                </p>
+                            </div>
+                            <i class="fa fa-code"></i>
+                        </div>
+                        <div class="sell">
+                            <div class="v-center">
+                                <h3>Always-on</h3>
+                                <p>
+                                    24/7 <strong><em>free</em></strong> access
+                                    in your development phases. Go nuts.
+                                </p>
+                            </div>
+                            <i class="fa fa-toggle-on"></i>
+                        </div>
+                    </section>
+                    <h2 class="tagline">
+                        A hosted REST-API ready to respond to your AJAX
+                        requests.
+                    </h2>
+                    <div class="t-center main-arrow">
+                        <i class="fa fa-arrow-circle-down"></i>
+                    </div>
+                    <script
+                        async
+                        type="text/javascript"
+                        src="//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&placement=reqresin"
+                        id="_carbonads_js"
+                    ></script>
+                </div>
+            </main>
+        </div>
+        <div class="container">404</div>
+        <footer>
+            <div class="wrap">
+                <hr class="dark" />
+                <p class="t-center">
+                    Made for developers and designers by
+                    <a href="https://benhowdle.im">Ben Howdle</a>
+                </p>
+            </div>
+        </footer>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js"></script>
+        <script src="/js/app.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-174008107-1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag('js', new Date())
+
+            gtag('config', 'UA-174008107-1')
+        </script>
+        <script>
+            ;(function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r
+                ;(i[r] =
+                    i[r] ||
+                    function () {
+                        ;(i[r].q = i[r].q || []).push(arguments)
+                    }),
+                    (i[r].l = 1 * new Date())
+                ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+                a.async = 1
+                a.src = g
+                m.parentNode.insertBefore(a, m)
+            })(
+                window,
+                document,
+                'script',
+                '//www.google-analytics.com/analytics.js',
+                'ga'
+            )
+
+            ga('create', 'UA-55888877-1', 'auto')
+            ga('send', 'pageview')
+        </script>
+        <script>
+            ;(function () {
+                if (typeof _bsa !== 'undefined' && _bsa) {
+                    _bsa.init(
+                        'custom',
+                        'CEBIP53J',
+                        'placement:reqresin-sponsor',
+                        {
+                            target: '#impeccable-js',
+                            template: `
+        <a href="##link##" rel="sponsored noopener" target="_blank" title="##company## — ##tagline##">
+        <img src="##logo##" style="background-color: ##backgroundColor##">
+        <div class="sponsor-description">##description##</div>
+        <div class="sponsor-cta" style="background-color: ##backgroundColor##; color: ##textColor##">##callToAction##</div>
+        </a>
+        `,
+                        }
+                    )
+                }
+            })()
+        </script>
+    </body>
+</html>
+
+2024-07-15 14:31:20 INFO  ResponseHandler:24 - handleApiResponseCode method Test successfully completed.
+2024-07-15 14:31:20 INFO  UpdateEmployeeAPITest:91 - Test successfully completed.
+2024-07-15 14:31:20 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCU02_validateUpdationWithInvalidEmployeeId
+2024-07-15 14:31:20 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCU03_validateDataUpdationOfValidEmployeeWithInvalidData
+2024-07-15 14:31:20 DEBUG ResponseHandler:17 - Response status code: 404
+2024-07-15 14:31:20 DEBUG ResponseHandler:18 - Response body: <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google Tag Manager -->
+        <script>
+            ;(function (w, d, s, l, i) {
+                w[l] = w[l] || []
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js',
+                })
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : ''
+                j.async = true
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+                f.parentNode.insertBefore(j, f)
+            })(window, document, 'script', 'dataLayer', 'GTM-KB622KF')
+        </script>
+        <!-- End Google Tag Manager -->
+        <script src="https://js.stripe.com/v3/"></script>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
+        <meta
+            name="description"
+            content="A hosted REST-API ready to respond to your AJAX requests"
+        />
+        <title>
+            Reqres - A hosted REST-API ready to respond to your AJAX requests
+        </title>
+        <link
+            href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/css/app.css" />
+        <script
+            type="text/javascript"
+            src="//m.servedby-buysellads.com/monetization.custom.js"
+        ></script>
+    </head>
+    <body>
+        <div class="header-content">
+            <header class="main-header">
+                <section class="wrap">
+                    <h1 class="logo">
+                        <a href="/"><img src="/img/logo.png" alt="" /></a>
+                    </h1>
+                </section>
+            </header>
+            <main class="the-sell">
+                <div class="wrap">
+                    <h2 class="tagline">
+                        Test your front-end against a real API
+                    </h2>
+                    <section class="key-sells">
+                        <div class="sell">
+                            <div class="v-center">
+                                <h3>Fake data</h3>
+                                <p>
+                                    No more tedious sample data creation, we've
+                                    got it covered.
+                                </p>
+                            </div>
+                            <i class="fa fa-cloud-download"></i>
+                        </div>
+                        <div class="sell">
+                            <div class="v-center">
+                                <h3>Real responses</h3>
+                                <p>
+                                    Develop with real response codes. GET, POST,
+                                    PUT &amp; DELETE supported.
+                                </p>
+                            </div>
+                            <i class="fa fa-code"></i>
+                        </div>
+                        <div class="sell">
+                            <div class="v-center">
+                                <h3>Always-on</h3>
+                                <p>
+                                    24/7 <strong><em>free</em></strong> access
+                                    in your development phases. Go nuts.
+                                </p>
+                            </div>
+                            <i class="fa fa-toggle-on"></i>
+                        </div>
+                    </section>
+                    <h2 class="tagline">
+                        A hosted REST-API ready to respond to your AJAX
+                        requests.
+                    </h2>
+                    <div class="t-center main-arrow">
+                        <i class="fa fa-arrow-circle-down"></i>
+                    </div>
+                    <script
+                        async
+                        type="text/javascript"
+                        src="//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&placement=reqresin"
+                        id="_carbonads_js"
+                    ></script>
+                </div>
+            </main>
+        </div>
+        <div class="container">404</div>
+        <footer>
+            <div class="wrap">
+                <hr class="dark" />
+                <p class="t-center">
+                    Made for developers and designers by
+                    <a href="https://benhowdle.im">Ben Howdle</a>
+                </p>
+            </div>
+        </footer>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js"></script>
+        <script src="/js/app.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-174008107-1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag('js', new Date())
+
+            gtag('config', 'UA-174008107-1')
+        </script>
+        <script>
+            ;(function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r
+                ;(i[r] =
+                    i[r] ||
+                    function () {
+                        ;(i[r].q = i[r].q || []).push(arguments)
+                    }),
+                    (i[r].l = 1 * new Date())
+                ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+                a.async = 1
+                a.src = g
+                m.parentNode.insertBefore(a, m)
+            })(
+                window,
+                document,
+                'script',
+                '//www.google-analytics.com/analytics.js',
+                'ga'
+            )
+
+            ga('create', 'UA-55888877-1', 'auto')
+            ga('send', 'pageview')
+        </script>
+        <script>
+            ;(function () {
+                if (typeof _bsa !== 'undefined' && _bsa) {
+                    _bsa.init(
+                        'custom',
+                        'CEBIP53J',
+                        'placement:reqresin-sponsor',
+                        {
+                            target: '#impeccable-js',
+                            template: `
+        <a href="##link##" rel="sponsored noopener" target="_blank" title="##company## — ##tagline##">
+        <img src="##logo##" style="background-color: ##backgroundColor##">
+        <div class="sponsor-description">##description##</div>
+        <div class="sponsor-cta" style="background-color: ##backgroundColor##; color: ##textColor##">##callToAction##</div>
+        </a>
+        `,
+                        }
+                    )
+                }
+            })()
+        </script>
+    </body>
+</html>
+
+2024-07-15 14:31:20 INFO  ResponseHandler:24 - handleApiResponseCode method Test successfully completed.
+2024-07-15 14:31:20 INFO  UpdateEmployeeAPITest:102 - Test successfully completed.
+2024-07-15 14:31:20 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCU03_validateDataUpdationOfValidEmployeeWithInvalidData
+2024-07-15 14:31:20 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TC005__ValidateUpdateAPILatency
+2024-07-15 14:31:21 INFO  UpdateEmployeeAPITest:130 - Test successfully completed.
+2024-07-15 14:31:21 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TC005__ValidateUpdateAPILatency
+2024-07-15 14:31:21 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCD001_ValidateValidEmployeeDeletion
+2024-07-15 14:31:21 INFO  DeleteEmployeeTest:50 - Starting test TCD001_ValidateValidEmployeeDeletion
+2024-07-15 14:31:21 DEBUG ResponseHandler:31 - Response status code: 204
+2024-07-15 14:31:21 DEBUG ResponseHandler:32 - Response body: 
+2024-07-15 14:31:21 INFO  ResponseHandler:38 - handleApiResponseCode method successfully completed.
+2024-07-15 14:31:21 INFO  DeleteEmployeeTest:52 - TCD001_ValidateValidEmployeeDeletion: Test successfully completed.
+2024-07-15 14:31:21 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCD001_ValidateValidEmployeeDeletion
+2024-07-15 14:31:22 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCD002_ValidatetNonExistentEmployeeDeletion
+2024-07-15 14:31:22 DEBUG ResponseHandler:31 - Response status code: 204
+2024-07-15 14:31:22 DEBUG ResponseHandler:32 - Response body: 
+2024-07-15 14:31:22 INFO  ResponseHandler:38 - handleApiResponseCode method successfully completed.
+2024-07-15 14:31:22 INFO  DeleteEmployeeTest:61 - Test successfully completed.
+2024-07-15 14:31:22 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCD002_ValidatetNonExistentEmployeeDeletion
+2024-07-15 14:31:22 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat
+2024-07-15 14:31:23 DEBUG ResponseHandler:17 - Response status code: 204
+2024-07-15 14:31:23 DEBUG ResponseHandler:18 - Response body: 
+2024-07-15 14:31:23 INFO  ResponseHandler:24 - handleApiResponseCode method Test successfully completed.
+2024-07-15 14:31:23 INFO  DeleteEmployeeTest:71 - Test successfully completed.
+2024-07-15 14:31:23 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat
+2024-07-15 14:31:23 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCD004_ValidateDeleteEmployeeWithEmptyId
+2024-07-15 14:31:23 DEBUG ResponseHandler:17 - Response status code: 204
+2024-07-15 14:31:23 DEBUG ResponseHandler:18 - Response body: 
+2024-07-15 14:31:23 INFO  ResponseHandler:24 - handleApiResponseCode method Test successfully completed.
+2024-07-15 14:31:23 INFO  DeleteEmployeeTest:80 - Test successfully completed.
+2024-07-15 14:31:23 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCD004_ValidateDeleteEmployeeWithEmptyId
+2024-07-15 14:31:23 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCD005_ValidateDeleteEmployeeWithMalformedRequest
+2024-07-15 14:31:24 DEBUG ResponseHandler:17 - Response status code: 204
+2024-07-15 14:31:24 DEBUG ResponseHandler:18 - Response body: 
+2024-07-15 14:31:24 ERROR ExtentReportListener:58 - Extent Report: Test Case Failed - TCD005_ValidateDeleteEmployeeWithMalformedRequest
+java.lang.AssertionError: The following asserts failed:
+	Able to delete  employee with malformed delete request Expected status code 400 but found 204 expected [400] but found [204]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at com.poppulo.employee_api_methods.ResponseHandler.handleApiResponseCode(ResponseHandler.java:23) ~[classes/:?]
+	at com.poppulo.employee_api_tests.DeleteEmployeeTest.TCD005_ValidateDeleteEmployeeWithMalformedRequest(DeleteEmployeeTest.java:93) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) ~[org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:794) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestRunner.run(TestRunner.java:596) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1063) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestNG.run(TestNG.java:1031) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+2024-07-15 14:31:24 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCD006_ValidateSimultaneousDeleteOperations
+2024-07-15 14:31:25 DEBUG DeleteEmployeeTest:108 - Response status code: 204
+2024-07-15 14:31:25 DEBUG DeleteEmployeeTest:109 - Response body: 
+2024-07-15 14:31:25 DEBUG DeleteEmployeeTest:108 - Response status code: 204
+2024-07-15 14:31:25 DEBUG DeleteEmployeeTest:109 - Response body: 
+2024-07-15 14:31:26 DEBUG DeleteEmployeeTest:108 - Response status code: 204
+2024-07-15 14:31:26 DEBUG DeleteEmployeeTest:109 - Response body: 
+2024-07-15 14:31:27 INFO  DeleteEmployeeTest:123 - Test successfully completed.
+2024-07-15 14:31:27 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCD006_ValidateSimultaneousDeleteOperations
+2024-07-15 14:31:27 INFO  ExtentReportListener:37 - Extent Report: Test Case Execution Started - TCD007_ValidateDeletetAPILatency
+2024-07-15 14:31:27 INFO  DeleteEmployeeTest:135 - Test successfully completed.
+2024-07-15 14:31:27 INFO  ExtentReportListener:49 - Extent Report: Test Case Passed - TCD007_ValidateDeletetAPILatency
+2024-07-15 14:31:28 INFO  ExtentReportListener:82 - Extent Report: Test Suite Execution Finished

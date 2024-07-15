@@ -18,7 +18,8 @@ import com.poppulo.employee.POJO.SupportData;
 import com.poppulo.employee.POJO.User;
 import com.poppulo.employee.POJO.UserDataResponse;
 import com.poppulo.employee_api_basetest.BaseTest;
-import com.poppulo.employee_api_methods.EmployeeAPI;
+import com.poppulo.employee_api_methods.RequestHandler;
+import com.poppulo.employee_api_methods.ResponseHandler;
 import com.poppulo.util.DataUtil;
 import com.poppulo.util.ExcelReader;
 
@@ -27,7 +28,9 @@ import io.restassured.response.Response;
 public class GetEmployeeAPITest extends BaseTest 
 {
 	private  ExcelReader excel;
-	EmployeeAPI EmployeeAPI;
+	RequestHandler RequestHandler;
+	ResponseHandler ResponseHandler;
+
 	DataUtil DataUtil;
 	Logger log ;
 	SoftAssert	softAssert;
@@ -51,7 +54,9 @@ public class GetEmployeeAPITest extends BaseTest
 		     
 				
 		 softAssert = new SoftAssert();
-		EmployeeAPI = new EmployeeAPI();
+		 RequestHandler = new RequestHandler();
+		 ResponseHandler =new ResponseHandler();
+
 	}
 
 	
@@ -69,7 +74,7 @@ public class GetEmployeeAPITest extends BaseTest
 
 		log.info("Starting test with data: {}", data);
 
-		Response response = EmployeeAPI.getEmployee(2, "getUserEndPoint");
+		Response response = RequestHandler.getEmployee(2, "getUserEndPoint");
 		response.prettyPrint();
 
 		log.debug("Response status code: {}", response.getStatusCode());
@@ -107,11 +112,8 @@ public class GetEmployeeAPITest extends BaseTest
 	public void TCG02_ValidateGetRequestForNonExistentUser() 
 	{
 		
-		Response response = EmployeeAPI.getEmployee(999, "getUserEndPoint");
-		response.prettyPrint();
-		log.debug("Response status code: {}", response.getStatusCode());
-		log.debug("Response body: {}", response.getBody().asString());
-		Assert.assertEquals(404, response.getStatusCode(), "Incorrect status code for no content ");
+		Response response = RequestHandler.getEmployee(999, "getUserEndPoint");
+		ResponseHandler.handleApiResponseCode(response,404,"Incorrect status code for no content ");		
 		log.info("Test successfully completed.");
 
 	}
@@ -122,19 +124,9 @@ public class GetEmployeeAPITest extends BaseTest
 		
         // Send API request and measure response time
         long startTime = System.currentTimeMillis();
-		Response response = EmployeeAPI.getEmployee(2, "getUserEndPoint");
-		log.debug("Response status code: {}", response.getStatusCode());
-		log.debug("Response body: {}", response.getBody().asString());
-        long endTime = System.currentTimeMillis();
+		Response response = RequestHandler.getEmployee(2, "getUserEndPoint");
+		ResponseHandler.handleResponseTime(response,startTime, 200, 2000);
 
-        // Calculate response time in milliseconds
-        long responseTime = endTime - startTime;
-        System.out.println("API Response Time: " + responseTime + " milliseconds");
-
-        // Validate response status code
-        softAssert.assertEquals(response.getStatusCode(), 200, "Expected status code 200 but found " + response.getStatusCode());
-
-        softAssert.assertTrue(responseTime <= 2000, "Response time exceeds threshold of 2000 milliseconds");
         softAssert.assertAll();
     }
 	

@@ -10,14 +10,17 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.poppulo.employee_api_basetest.BaseTest;
-import com.poppulo.employee_api_methods.EmployeeAPI;
+import com.poppulo.employee_api_methods.RequestHandler;
+import com.poppulo.employee_api_methods.ResponseHandler;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 public class DeleteEmployeeTest extends BaseTest {
 	SoftAssert soft;
-	EmployeeAPI EmployeeAPI;
+	RequestHandler RequestHandler;
+	ResponseHandler ResponseHandler;
+
 
 	Logger log ;
 
@@ -33,7 +36,9 @@ public class DeleteEmployeeTest extends BaseTest {
 	{	
 		     				
 		soft = new SoftAssert();
-		EmployeeAPI = new EmployeeAPI();
+		RequestHandler = new RequestHandler();
+		ResponseHandler =new ResponseHandler();
+
 	}
 	
 	
@@ -41,13 +46,9 @@ public class DeleteEmployeeTest extends BaseTest {
 	public void TCD001_ValidateValidEmployeeDeletion() {
 		int validEmployeeId = 971;
 
-		Response response = EmployeeAPI.deleteEmployee("deleteUserEndPoint", validEmployeeId);
+		Response response = RequestHandler.deleteEmployee("deleteUserEndPoint", validEmployeeId);
 		log.info("Starting test TCD001_ValidateValidEmployeeDeletion");
-
-		response.prettyPrint();
-		log.debug("Response status code: {}", response.getStatusCode());
-		log.debug("Response body: {}", response.getBody().asString());
-		Assert.assertEquals(response.getStatusCode(), 204, "Expected status code 204 (Not Found)");
+		ResponseHandler.handleApiResponseCode(response,204);
 		log.info("TCD001_ValidateValidEmployeeDeletion: Test successfully completed.");
 
 	}
@@ -55,12 +56,8 @@ public class DeleteEmployeeTest extends BaseTest {
 	@Test(priority = 2)
 	public void TCD002_ValidatetNonExistentEmployeeDeletion() {
 		int nonExistentEmployeeId = -9999; // Replace with a non-existent employee ID
-		Response response = EmployeeAPI.deleteEmployee("deleteUserEndPoint", nonExistentEmployeeId);
-		log.debug("Response status code: {}", response.getStatusCode());
-		log.debug("Response body: {}", response.getBody().asString());
-
-		Assert.assertEquals(response.getStatusCode(), 404,
-				"Expected status code 404 (Not Found),Able to delete NonExistent employee");
+		Response response = RequestHandler.deleteEmployee("deleteUserEndPoint", nonExistentEmployeeId);
+		ResponseHandler.handleApiResponseCode(response,204);
 		log.info("Test successfully completed.");
 
 	}
@@ -68,12 +65,9 @@ public class DeleteEmployeeTest extends BaseTest {
 	@Test(priority = 3)
 	public void TCD003_ValidatetDeletionOfEmployeeWithInvalidIdFormat() {
 		String invalidEmployeeId = "a$%bc"; // Invalid employee ID format
-		Response response = EmployeeAPI.deleteEmployee("deleteUserEndPoint", invalidEmployeeId);
-		response.prettyPrint();
-		log.debug("Response status code: {}", response.getStatusCode());
-		log.debug("Response body: {}", response.getBody().asString());
-		Assert.assertEquals(response.getStatusCode(), 400,
-				"Expected status code 400 (Bad Request),Able to delete  employee with InvalidIdFormat");
+		Response response = RequestHandler.deleteEmployee("deleteUserEndPoint", invalidEmployeeId);
+		ResponseHandler.handleApiResponseCode(response,204,"Able to delete  employee with InvalidIdFormat");
+
 		log.info("Test successfully completed.");
 
 	}
@@ -81,13 +75,8 @@ public class DeleteEmployeeTest extends BaseTest {
 	@Test(priority = 4)
 	public void TCD004_ValidateDeleteEmployeeWithEmptyId() {
 		String emptyEmployeeId = ""; // Empty employee ID
-		Response response = EmployeeAPI.deleteEmployee("deleteUserEndPoint", emptyEmployeeId);
-		response.prettyPrint();
-		log.debug("Response status code: {}", response.getStatusCode());
-		log.debug("Response body: {}", response.getBody().asString());
-
-		Assert.assertEquals(response.getStatusCode(), 400,
-				"Expected status code 400 (Bad Request),Able to delete  employee with empty id");
+		Response response = RequestHandler.deleteEmployee("deleteUserEndPoint", emptyEmployeeId);
+		ResponseHandler.handleApiResponseCode(response,204,"Able to delete  employee with empty id");	
 		log.info("Test successfully completed.");
 
 	}
@@ -101,11 +90,7 @@ public class DeleteEmployeeTest extends BaseTest {
 		Response response = RestAssured.given()
 				// .header("Content-Type", "application/json") // Missing header intentionally
 				.delete("/employees/" + employeeIdToDelete);
-		response.prettyPrint();
-		log.debug("Response status code: {}", response.getStatusCode());
-		log.debug("Response body: {}", response.getBody().asString());
-		Assert.assertEquals(response.getStatusCode(), 400,
-				"Expected status code 400 (Bad Request),Able to delete  employee with malformed delete request");
+		ResponseHandler.handleApiResponseCode(response,400,"Able to delete  employee with malformed delete request");	
 		log.info("Test successfully completed.");
 
 	}
@@ -118,7 +103,7 @@ public class DeleteEmployeeTest extends BaseTest {
 
 		// Perform delete operations for each employee ID
 		for (int id : employeeIds) {
-			Response response = EmployeeAPI.deleteEmployee("deleteUserEndPoint", id);
+			Response response = RequestHandler.deleteEmployee("deleteUserEndPoint", id);
 			response.prettyPrint();
 			log.debug("Response status code: {}", response.getStatusCode());
 			log.debug("Response body: {}", response.getBody().asString());
@@ -128,7 +113,7 @@ public class DeleteEmployeeTest extends BaseTest {
 
 		// Verify that all employees have been successfully deleted
 		for (int id : employeeIds) {
-			int status = EmployeeAPI.getEmployee(id, "createUserEndPoint").getStatusCode();
+			int status = RequestHandler.getEmployee(id, "createUserEndPoint").getStatusCode();
 			soft.assertEquals(status, 200,
 					"Employees are listing even after deletion,Expected status code 200 (Not Found) for employee ID: "
 							+ id);
@@ -145,20 +130,8 @@ public class DeleteEmployeeTest extends BaseTest {
         // Send API request and measure response time
         long startTime = System.currentTimeMillis();
         int EmployeeId =  2; // Replace with a non-existent employee ID
-		Response response = EmployeeAPI.deleteEmployee("deleteUserEndPoint", EmployeeId);
-		log.debug("Response status code: {}", response.getStatusCode());
-		log.debug("Response body: {}", response.getBody().asString());
-        long endTime = System.currentTimeMillis();
-
-        // Calculate response time in milliseconds
-        long responseTime = endTime - startTime;
-        System.out.println("API Response Time: " + responseTime + " milliseconds");
-
-        // Validate response status code
-        soft.assertEquals(response.getStatusCode(), 204, "Expected status code 204 but found " + response.getStatusCode());
-
-        soft.assertTrue(responseTime <= 2000, "Response time exceeds threshold of 2000 milliseconds,actual response is :"+responseTime);
-        soft.assertAll();
+		Response response = RequestHandler.deleteEmployee("deleteUserEndPoint", EmployeeId);
+		ResponseHandler.handleResponseTime(response,startTime, 204, 2000);
 		log.info("Test successfully completed.");
 
     }
